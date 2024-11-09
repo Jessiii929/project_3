@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fed6e33e284e99820a90e4af1850ea0c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fed6e33e284e99820a90e4af1850ea0c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fed6e33e284e99820a90e4af1850ea0c = L.map(
+                "map_fed6e33e284e99820a90e4af1850ea0c",
+                {
+                    center: [37.092, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_07cf94d869b6775c1e28f2eda43e8e3b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_07cf94d869b6775c1e28f2eda43e8e3b.addTo(map_fed6e33e284e99820a90e4af1850ea0c);
+        
+    
+            var marker_cluster_ddb08dce97424deac2263ee08ea0675b = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_15948ef0b22626abe39acd490dd5edab = L.circleMarker(
+                [35.0841034, -106.650985],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.182, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_b4a3c146f50a859e98184fe08a5797e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2cd2cbaf02e80cac7432f53c853deb9 = $(`<div id="html_b2cd2cbaf02e80cac7432f53c853deb9" style="width: 100.0%; height: 100.0%;">Albuquerque, NM: 5591.0 violent crimes</div>`)[0];
+                popup_b4a3c146f50a859e98184fe08a5797e1.setContent(html_b2cd2cbaf02e80cac7432f53c853deb9);
+            
+        
+
+        circle_marker_15948ef0b22626abe39acd490dd5edab.bindPopup(popup_b4a3c146f50a859e98184fe08a5797e1)
+        ;
+
+        
+    
+    
+            var circle_marker_85597a02c9ca9947e979f0aa7a257cde = L.circleMarker(
+                [32.7355816, -97.1071186],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.216, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_515fa67b22d10063a7c39bb1f21ff47e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1541f9b78ab4fcb7f7d9b682bf34d8a = $(`<div id="html_c1541f9b78ab4fcb7f7d9b682bf34d8a" style="width: 100.0%; height: 100.0%;">Arlington, TX: 2108.0 violent crimes</div>`)[0];
+                popup_515fa67b22d10063a7c39bb1f21ff47e.setContent(html_c1541f9b78ab4fcb7f7d9b682bf34d8a);
+            
+        
+
+        circle_marker_85597a02c9ca9947e979f0aa7a257cde.bindPopup(popup_515fa67b22d10063a7c39bb1f21ff47e)
+        ;
+
+        
+    
+    
+            var circle_marker_66741685272e86541aa438991d550c07 = L.circleMarker(
+                [33.7489924, -84.3902644],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.654, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_d7ea916970602bc5efdd045ee6ab302f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e70ab77575f4dbc9eda7494ac7970d2 = $(`<div id="html_5e70ab77575f4dbc9eda7494ac7970d2" style="width: 100.0%; height: 100.0%;">Atlanta, GA: 16327.0 violent crimes</div>`)[0];
+                popup_d7ea916970602bc5efdd045ee6ab302f.setContent(html_5e70ab77575f4dbc9eda7494ac7970d2);
+            
+        
+
+        circle_marker_66741685272e86541aa438991d550c07.bindPopup(popup_d7ea916970602bc5efdd045ee6ab302f)
+        ;
+
+        
+    
+    
+            var circle_marker_785cdeddd995e156c09de5e666436d1e = L.circleMarker(
+                [41.7571701, -88.3147539],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.492, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_31d35a97263b2514c4c3de79ae0487bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cf5c9efd1adeb0fc3a15c04c2b00729 = $(`<div id="html_7cf5c9efd1adeb0fc3a15c04c2b00729" style="width: 100.0%; height: 100.0%;">Aurora, CO: 3746.0 violent crimes</div>`)[0];
+                popup_31d35a97263b2514c4c3de79ae0487bf.setContent(html_7cf5c9efd1adeb0fc3a15c04c2b00729);
+            
+        
+
+        circle_marker_785cdeddd995e156c09de5e666436d1e.bindPopup(popup_31d35a97263b2514c4c3de79ae0487bf)
+        ;
+
+        
+    
+    
+            var circle_marker_92ed9554e39bd3f7271e6d6f732b1c1f = L.circleMarker(
+                [30.341598599999998, -97.58721349128422],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.936, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_eb5c820e6ffbe64cde30349f697eb1c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_446514092d6443a850096160ce2eadd9 = $(`<div id="html_446514092d6443a850096160ce2eadd9" style="width: 100.0%; height: 100.0%;">Austin, TX: 2968.0 violent crimes</div>`)[0];
+                popup_eb5c820e6ffbe64cde30349f697eb1c9.setContent(html_446514092d6443a850096160ce2eadd9);
+            
+        
+
+        circle_marker_92ed9554e39bd3f7271e6d6f732b1c1f.bindPopup(popup_eb5c820e6ffbe64cde30349f697eb1c9)
+        ;
+
+        
+    
+    
+            var circle_marker_dfc513bf43940662ce8d431bcc112d84 = L.circleMarker(
+                [39.4445243, -76.6483482],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.236, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_7df4275a1d196305aa13b866bea6af94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40d08c29128475fbd32a2b7891e5f642 = $(`<div id="html_40d08c29128475fbd32a2b7891e5f642" style="width: 100.0%; height: 100.0%;">Baltimore County, MD: 7618.0 violent crimes</div>`)[0];
+                popup_7df4275a1d196305aa13b866bea6af94.setContent(html_40d08c29128475fbd32a2b7891e5f642);
+            
+        
+
+        circle_marker_dfc513bf43940662ce8d431bcc112d84.bindPopup(popup_7df4275a1d196305aa13b866bea6af94)
+        ;
+
+        
+    
+    
+            var circle_marker_fc6b6e9a1c521eb79a594c35bb83f168 = L.circleMarker(
+                [39.2908816, -76.610759],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.064, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_6ed57cc6a1b64d44236654ae43d957e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e25e36f400e00f091350754be06dc69e = $(`<div id="html_e25e36f400e00f091350754be06dc69e" style="width: 100.0%; height: 100.0%;">Baltimore, MD: 19032.0 violent crimes</div>`)[0];
+                popup_6ed57cc6a1b64d44236654ae43d957e1.setContent(html_e25e36f400e00f091350754be06dc69e);
+            
+        
+
+        circle_marker_fc6b6e9a1c521eb79a594c35bb83f168.bindPopup(popup_6ed57cc6a1b64d44236654ae43d957e1)
+        ;
+
+        
+    
+    
+            var circle_marker_0749bce7ef870f5604750511c18a92f4 = L.circleMarker(
+                [42.3554334, -71.060511],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.658, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_24d02d1bdbdf78db6cf50d6df6c9bd60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a96ced38ed13cb468388e8cd2ea2c54 = $(`<div id="html_9a96ced38ed13cb468388e8cd2ea2c54" style="width: 100.0%; height: 100.0%;">Boston, MA: 11829.0 violent crimes</div>`)[0];
+                popup_24d02d1bdbdf78db6cf50d6df6c9bd60.setContent(html_9a96ced38ed13cb468388e8cd2ea2c54);
+            
+        
+
+        circle_marker_0749bce7ef870f5604750511c18a92f4.bindPopup(popup_24d02d1bdbdf78db6cf50d6df6c9bd60)
+        ;
+
+        
+    
+    
+            var circle_marker_5d07c692e7d8880ff3d069060ab02883 = L.circleMarker(
+                [42.8867166, -78.8783922],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.084, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_e71fc53baf8a24e4fcf485243a8efceb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c5996127bd54b8bb5ec442b3f7be56a = $(`<div id="html_0c5996127bd54b8bb5ec442b3f7be56a" style="width: 100.0%; height: 100.0%;">Buffalo, NY: 6042.0 violent crimes</div>`)[0];
+                popup_e71fc53baf8a24e4fcf485243a8efceb.setContent(html_0c5996127bd54b8bb5ec442b3f7be56a);
+            
+        
+
+        circle_marker_5d07c692e7d8880ff3d069060ab02883.bindPopup(popup_e71fc53baf8a24e4fcf485243a8efceb)
+        ;
+
+        
+    
+    
+            var circle_marker_42d4e42b616d55e772cf9c5375d80439 = L.circleMarker(
+                [35.2272086, -80.8430827],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.52, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_53cabd4e821fb9cfeee1e773a01c69f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0e3e9cc63e2341f4dbaf326fcd311d2 = $(`<div id="html_c0e3e9cc63e2341f4dbaf326fcd311d2" style="width: 100.0%; height: 100.0%;">Charlotte, NC: 8760.0 violent crimes</div>`)[0];
+                popup_53cabd4e821fb9cfeee1e773a01c69f9.setContent(html_c0e3e9cc63e2341f4dbaf326fcd311d2);
+            
+        
+
+        circle_marker_42d4e42b616d55e772cf9c5375d80439.bindPopup(popup_53cabd4e821fb9cfeee1e773a01c69f9)
+        ;
+
+        
+    
+    
+            var circle_marker_633d192f460eea56d32de24beba0fae8 = L.circleMarker(
+                [41.8755616, -87.6244212],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 181.04, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_9b41da2ae316d766c9aeef4c9e268853 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28f1e3da3b671afdd055c6da857d9261 = $(`<div id="html_28f1e3da3b671afdd055c6da857d9261" style="width: 100.0%; height: 100.0%;">Chicago, IL: 90520.0 violent crimes</div>`)[0];
+                popup_9b41da2ae316d766c9aeef4c9e268853.setContent(html_28f1e3da3b671afdd055c6da857d9261);
+            
+        
+
+        circle_marker_633d192f460eea56d32de24beba0fae8.bindPopup(popup_9b41da2ae316d766c9aeef4c9e268853)
+        ;
+
+        
+    
+    
+            var circle_marker_414b7ac89a932f3d88c2134ea60fc9ee = L.circleMarker(
+                [39.1014537, -84.5124602],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.588, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_a0fca25fd17e45e207e88ffe54a5caa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_870a4d107444ec3a2a0969d7dca898d4 = $(`<div id="html_870a4d107444ec3a2a0969d7dca898d4" style="width: 100.0%; height: 100.0%;">Cincinnati, OH: 5794.0 violent crimes</div>`)[0];
+                popup_a0fca25fd17e45e207e88ffe54a5caa2.setContent(html_870a4d107444ec3a2a0969d7dca898d4);
+            
+        
+
+        circle_marker_414b7ac89a932f3d88c2134ea60fc9ee.bindPopup(popup_a0fca25fd17e45e207e88ffe54a5caa2)
+        ;
+
+        
+    
+    
+            var circle_marker_dc2091bd6c5ae6ebdc7c9411f010b809 = L.circleMarker(
+                [41.4996574, -81.6936772],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.682, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_21cbfe046e0d93a098cdad3531faf770 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ae6499ad165d5a42a7784ea7c4d1934 = $(`<div id="html_3ae6499ad165d5a42a7784ea7c4d1934" style="width: 100.0%; height: 100.0%;">Cleveland, OH: 9341.0 violent crimes</div>`)[0];
+                popup_21cbfe046e0d93a098cdad3531faf770.setContent(html_3ae6499ad165d5a42a7784ea7c4d1934);
+            
+        
+
+        circle_marker_dc2091bd6c5ae6ebdc7c9411f010b809.bindPopup(popup_21cbfe046e0d93a098cdad3531faf770)
+        ;
+
+        
+    
+    
+            var circle_marker_949f870ae53eca8d524391d52971dd5c = L.circleMarker(
+                [39.9622601, -83.0007065],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.442, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_b1cac2a05284440aa92f158b7fa0171a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ce3f8a523cb27a0c0ba9965c06f6d50 = $(`<div id="html_8ce3f8a523cb27a0c0ba9965c06f6d50" style="width: 100.0%; height: 100.0%;">Columbus, OH: 7221.0 violent crimes</div>`)[0];
+                popup_b1cac2a05284440aa92f158b7fa0171a.setContent(html_8ce3f8a523cb27a0c0ba9965c06f6d50);
+            
+        
+
+        circle_marker_949f870ae53eca8d524391d52971dd5c.bindPopup(popup_b1cac2a05284440aa92f158b7fa0171a)
+        ;
+
+        
+    
+    
+            var circle_marker_46b0e0afc59c40d8fcfd68bf5ee5cbed = L.circleMarker(
+                [32.7762719, -96.7968559],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52.822, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_13a81abbad45c6b3abc16d42ea56e8e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4498746c3711a54eb77f1cd62251562e = $(`<div id="html_4498746c3711a54eb77f1cd62251562e" style="width: 100.0%; height: 100.0%;">Dallas, TX: 26411.0 violent crimes</div>`)[0];
+                popup_13a81abbad45c6b3abc16d42ea56e8e1.setContent(html_4498746c3711a54eb77f1cd62251562e);
+            
+        
+
+        circle_marker_46b0e0afc59c40d8fcfd68bf5ee5cbed.bindPopup(popup_13a81abbad45c6b3abc16d42ea56e8e1)
+        ;
+
+        
+    
+    
+            var circle_marker_858f0277fdcb42c506c335d0068651e6 = L.circleMarker(
+                [39.7392364, -104.984862],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.068, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_e410b72f1364163e3f48d6ea3dca5207 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2eef7cc22934d16e1d193482d20b4d4 = $(`<div id="html_e2eef7cc22934d16e1d193482d20b4d4" style="width: 100.0%; height: 100.0%;">Denver, CO: 5034.0 violent crimes</div>`)[0];
+                popup_e410b72f1364163e3f48d6ea3dca5207.setContent(html_e2eef7cc22934d16e1d193482d20b4d4);
+            
+        
+
+        circle_marker_858f0277fdcb42c506c335d0068651e6.bindPopup(popup_e410b72f1364163e3f48d6ea3dca5207)
+        ;
+
+        
+    
+    
+            var circle_marker_a032579f51bf7647bacaba6ca148be65 = L.circleMarker(
+                [42.3315509, -83.0466403],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 56.524, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_aaffe4c9586c804d90fec92b5fa5d4a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1f546b7dafe3393ef4ba5a86341a5ff = $(`<div id="html_a1f546b7dafe3393ef4ba5a86341a5ff" style="width: 100.0%; height: 100.0%;">Detroit, MI: 28262.0 violent crimes</div>`)[0];
+                popup_aaffe4c9586c804d90fec92b5fa5d4a5.setContent(html_a1f546b7dafe3393ef4ba5a86341a5ff);
+            
+        
+
+        circle_marker_a032579f51bf7647bacaba6ca148be65.bindPopup(popup_aaffe4c9586c804d90fec92b5fa5d4a5)
+        ;
+
+        
+    
+    
+            var circle_marker_f875ebdc272e88e66ae2e39123aa2028 = L.circleMarker(
+                [31.7601164, -106.4870404],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.232, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_67f637c0f60921a942558cf0c60f81e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86a0f47143c0d584092625ed8dd648ce = $(`<div id="html_86a0f47143c0d584092625ed8dd648ce" style="width: 100.0%; height: 100.0%;">El Paso, TX: 5616.0 violent crimes</div>`)[0];
+                popup_67f637c0f60921a942558cf0c60f81e7.setContent(html_86a0f47143c0d584092625ed8dd648ce);
+            
+        
+
+        circle_marker_f875ebdc272e88e66ae2e39123aa2028.bindPopup(popup_67f637c0f60921a942558cf0c60f81e7)
+        ;
+
+        
+    
+    
+            var circle_marker_79a82d374ab86df98c70f6c9b4468ab3 = L.circleMarker(
+                [38.8156356, -77.2836849],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.908, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_e4aeaca5949b86e5ac53d7b69f90bf6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e6598c751d9094782eaa8ad55834498 = $(`<div id="html_7e6598c751d9094782eaa8ad55834498" style="width: 100.0%; height: 100.0%;">Fairfax County, VA: 954.0 violent crimes</div>`)[0];
+                popup_e4aeaca5949b86e5ac53d7b69f90bf6a.setContent(html_7e6598c751d9094782eaa8ad55834498);
+            
+        
+
+        circle_marker_79a82d374ab86df98c70f6c9b4468ab3.bindPopup(popup_e4aeaca5949b86e5ac53d7b69f90bf6a)
+        ;
+
+        
+    
+    
+            var circle_marker_7b1553e37a634c2ecd4b7a2192f00938 = L.circleMarker(
+                [33.0357485, -97.32462503769055],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.828, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_61af087e252ed9b8abf62358f5e0640e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0b1a81b2fc9bd9b5859f13ae476e50b = $(`<div id="html_e0b1a81b2fc9bd9b5859f13ae476e50b" style="width: 100.0%; height: 100.0%;">Fort Worth, TX: 8914.0 violent crimes</div>`)[0];
+                popup_61af087e252ed9b8abf62358f5e0640e.setContent(html_e0b1a81b2fc9bd9b5859f13ae476e50b);
+            
+        
+
+        circle_marker_7b1553e37a634c2ecd4b7a2192f00938.bindPopup(popup_61af087e252ed9b8abf62358f5e0640e)
+        ;
+
+        
+    
+    
+            var circle_marker_be964053552117d9cf17e8afa99a2744 = L.circleMarker(
+                [36.7394421, -119.78483],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.216, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_0250580a54c7bcdf135bef47b250bf60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3d8da6bdc204106a6111840811d490b = $(`<div id="html_c3d8da6bdc204106a6111840811d490b" style="width: 100.0%; height: 100.0%;">Fresno, CA: 4608.0 violent crimes</div>`)[0];
+                popup_0250580a54c7bcdf135bef47b250bf60.setContent(html_c3d8da6bdc204106a6111840811d490b);
+            
+        
+
+        circle_marker_be964053552117d9cf17e8afa99a2744.bindPopup(popup_0250580a54c7bcdf135bef47b250bf60)
+        ;
+
+        
+    
+    
+            var circle_marker_efc0501beee87404e5604a98ee65b39f = L.circleMarker(
+                [21.304547, -157.855676],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.116, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_9e397bcca0d1a8957f51f9e5c138a97d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af2add75fc5f6746ca97d66df92ab19a = $(`<div id="html_af2add75fc5f6746ca97d66df92ab19a" style="width: 100.0%; height: 100.0%;">Honolulu, HI: 2058.0 violent crimes</div>`)[0];
+                popup_9e397bcca0d1a8957f51f9e5c138a97d.setContent(html_af2add75fc5f6746ca97d66df92ab19a);
+            
+        
+
+        circle_marker_efc0501beee87404e5604a98ee65b39f.bindPopup(popup_9e397bcca0d1a8957f51f9e5c138a97d)
+        ;
+
+        
+    
+    
+            var circle_marker_5742f1e9cbf30a82e5b8cd898548f91a = L.circleMarker(
+                [29.7589382, -95.3676974],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 53.302, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_0f7847a2f48b8e6a93275f288ce8a313 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a34c7bf9752ee0b11fb2ff08e7262df = $(`<div id="html_4a34c7bf9752ee0b11fb2ff08e7262df" style="width: 100.0%; height: 100.0%;">Houston, TX: 26651.0 violent crimes</div>`)[0];
+                popup_0f7847a2f48b8e6a93275f288ce8a313.setContent(html_4a34c7bf9752ee0b11fb2ff08e7262df);
+            
+        
+
+        circle_marker_5742f1e9cbf30a82e5b8cd898548f91a.bindPopup(popup_0f7847a2f48b8e6a93275f288ce8a313)
+        ;
+
+        
+    
+    
+            var circle_marker_bb653cc627d6d99181d797b17cbe2611 = L.circleMarker(
+                [39.7683331, -86.1583502],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.144, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_cfa1950358b2f28eb75c704dffe58c19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fadb49c18e07347db52ce421a9d8ded1 = $(`<div id="html_fadb49c18e07347db52ce421a9d8ded1" style="width: 100.0%; height: 100.0%;">Indianapolis, IN: 7072.0 violent crimes</div>`)[0];
+                popup_cfa1950358b2f28eb75c704dffe58c19.setContent(html_fadb49c18e07347db52ce421a9d8ded1);
+            
+        
+
+        circle_marker_bb653cc627d6d99181d797b17cbe2611.bindPopup(popup_cfa1950358b2f28eb75c704dffe58c19)
+        ;
+
+        
+    
+    
+            var circle_marker_fbb27c77829935f8966a919e5b6b7c05 = L.circleMarker(
+                [30.3321838, -81.655651],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.29, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_4af9ed1bb576acbf30c57dd1246bb009 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7901628c3cf47b7607b1d382ed5e9d92 = $(`<div id="html_7901628c3cf47b7607b1d382ed5e9d92" style="width: 100.0%; height: 100.0%;">Jacksonville, FL: 10645.0 violent crimes</div>`)[0];
+                popup_4af9ed1bb576acbf30c57dd1246bb009.setContent(html_7901628c3cf47b7607b1d382ed5e9d92);
+            
+        
+
+        circle_marker_fbb27c77829935f8966a919e5b6b7c05.bindPopup(popup_4af9ed1bb576acbf30c57dd1246bb009)
+        ;
+
+        
+    
+    
+            var circle_marker_7481c6d9a238d505c408c2d320a0a443 = L.circleMarker(
+                [39.100105, -94.5781416],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.826, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_67efa8b38aca07b8f4686c34e132dc3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2ffe284068fcef29a4c16daabd331b7 = $(`<div id="html_c2ffe284068fcef29a4c16daabd331b7" style="width: 100.0%; height: 100.0%;">Kansas City, MO: 12413.0 violent crimes</div>`)[0];
+                popup_67efa8b38aca07b8f4686c34e132dc3b.setContent(html_c2ffe284068fcef29a4c16daabd331b7);
+            
+        
+
+        circle_marker_7481c6d9a238d505c408c2d320a0a443.bindPopup(popup_67efa8b38aca07b8f4686c34e132dc3b)
+        ;
+
+        
+    
+    
+            var circle_marker_2ad0b3e5d411b45a8ac74df135ea17ef = L.circleMarker(
+                [36.1672559, -115.148516],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.322, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_b90d9f26c12e859dfc6ecf828a213970 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60858f4c7b52584c8b4e2638a2911035 = $(`<div id="html_60858f4c7b52584c8b4e2638a2911035" style="width: 100.0%; height: 100.0%;">Las Vegas, NV: 5661.0 violent crimes</div>`)[0];
+                popup_b90d9f26c12e859dfc6ecf828a213970.setContent(html_60858f4c7b52584c8b4e2638a2911035);
+            
+        
+
+        circle_marker_2ad0b3e5d411b45a8ac74df135ea17ef.bindPopup(popup_b90d9f26c12e859dfc6ecf828a213970)
+        ;
+
+        
+    
+    
+            var circle_marker_3e1b9947541a8756633be4022e8941f1 = L.circleMarker(
+                [33.7690164, -118.191604],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.418, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_b0015928cbdf91170bb61d2f35d6e214 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e999e1bc51402bb0dda23613a806edb = $(`<div id="html_2e999e1bc51402bb0dda23613a806edb" style="width: 100.0%; height: 100.0%;">Long Beach, CA: 9209.0 violent crimes</div>`)[0];
+                popup_b0015928cbdf91170bb61d2f35d6e214.setContent(html_2e999e1bc51402bb0dda23613a806edb);
+            
+        
+
+        circle_marker_3e1b9947541a8756633be4022e8941f1.bindPopup(popup_b0015928cbdf91170bb61d2f35d6e214)
+        ;
+
+        
+    
+    
+            var circle_marker_81386aa1a0721414d764987500813c61 = L.circleMarker(
+                [34.3155072, -118.209681],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 34.036, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_f468fb4717446e2d1891191c67d2448f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39a5528c0678d8c7bb63210728152e44 = $(`<div id="html_39a5528c0678d8c7bb63210728152e44" style="width: 100.0%; height: 100.0%;">Los Angeles County, CA: 17018.0 violent crimes</div>`)[0];
+                popup_f468fb4717446e2d1891191c67d2448f.setContent(html_39a5528c0678d8c7bb63210728152e44);
+            
+        
+
+        circle_marker_81386aa1a0721414d764987500813c61.bindPopup(popup_f468fb4717446e2d1891191c67d2448f)
+        ;
+
+        
+    
+    
+            var circle_marker_86929a55c8ae0115da64d4b4ed4bace7 = L.circleMarker(
+                [34.0536909, -118.242766],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 179.75, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_e08d3ab87dd46de252f80828556ec2af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2c49ba3b924a776dd0014799c3b4557 = $(`<div id="html_b2c49ba3b924a776dd0014799c3b4557" style="width: 100.0%; height: 100.0%;">Los Angeles, CA: 89875.0 violent crimes</div>`)[0];
+                popup_e08d3ab87dd46de252f80828556ec2af.setContent(html_b2c49ba3b924a776dd0014799c3b4557);
+            
+        
+
+        circle_marker_86929a55c8ae0115da64d4b4ed4bace7.bindPopup(popup_e08d3ab87dd46de252f80828556ec2af)
+        ;
+
+        
+    
+    
+            var circle_marker_d1da8615ad16ba5e1f13b6149b709650 = L.circleMarker(
+                [35.1460249, -90.0517638],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.636, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_86a2f299d676ab0248df877aa3434e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdb4760dfb3a45207c93a99d472be7e8 = $(`<div id="html_cdb4760dfb3a45207c93a99d472be7e8" style="width: 100.0%; height: 100.0%;">Memphis, TN: 8818.0 violent crimes</div>`)[0];
+                popup_86a2f299d676ab0248df877aa3434e88.setContent(html_cdb4760dfb3a45207c93a99d472be7e8);
+            
+        
+
+        circle_marker_d1da8615ad16ba5e1f13b6149b709650.bindPopup(popup_86a2f299d676ab0248df877aa3434e88)
+        ;
+
+        
+    
+    
+            var circle_marker_b269275117aef48dd630c1f151d07083 = L.circleMarker(
+                [33.4151005, -111.831455],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.116, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_aeaae255c16ab8138e12e83d80788a57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d7b10b169e59d316310377da3dddb11 = $(`<div id="html_7d7b10b169e59d316310377da3dddb11" style="width: 100.0%; height: 100.0%;">Mesa, AZ: 2058.0 violent crimes</div>`)[0];
+                popup_aeaae255c16ab8138e12e83d80788a57.setContent(html_7d7b10b169e59d316310377da3dddb11);
+            
+        
+
+        circle_marker_b269275117aef48dd630c1f151d07083.bindPopup(popup_aeaae255c16ab8138e12e83d80788a57)
+        ;
+
+        
+    
+    
+            var circle_marker_b310806169c11fc467e843297ea61031 = L.circleMarker(
+                [25.6364246, -80.4989467],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.278, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_5744d053dcf288f544600e0a4fb8794e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfdcddbe369fa3f2a5f4ba1b0a455b47 = $(`<div id="html_cfdcddbe369fa3f2a5f4ba1b0a455b47" style="width: 100.0%; height: 100.0%;">Miami-Dade County, FL: 19139.0 violent crimes</div>`)[0];
+                popup_5744d053dcf288f544600e0a4fb8794e.setContent(html_cfdcddbe369fa3f2a5f4ba1b0a455b47);
+            
+        
+
+        circle_marker_b310806169c11fc467e843297ea61031.bindPopup(popup_5744d053dcf288f544600e0a4fb8794e)
+        ;
+
+        
+    
+    
+            var circle_marker_4d5902d069e57c69d9232dcaa1764879 = L.circleMarker(
+                [25.7741728, -80.19362],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.84, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_04ed8343ea07aa9d5928610aa105dbf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2f89a3d6804ef5abd249a4b150ec52e = $(`<div id="html_f2f89a3d6804ef5abd249a4b150ec52e" style="width: 100.0%; height: 100.0%;">Miami, FL: 15420.0 violent crimes</div>`)[0];
+                popup_04ed8343ea07aa9d5928610aa105dbf6.setContent(html_f2f89a3d6804ef5abd249a4b150ec52e);
+            
+        
+
+        circle_marker_4d5902d069e57c69d9232dcaa1764879.bindPopup(popup_04ed8343ea07aa9d5928610aa105dbf6)
+        ;
+
+        
+    
+    
+            var circle_marker_6507620ae1786bcd3c64cfea8244cd34 = L.circleMarker(
+                [43.0386475, -87.9090751],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.456, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_a5ad30e25e6545f9ae1a233c237136bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46f2cd9e284a4c7a9ff6612fd11d7626 = $(`<div id="html_46f2cd9e284a4c7a9ff6612fd11d7626" style="width: 100.0%; height: 100.0%;">Milwaukee, WI: 6228.0 violent crimes</div>`)[0];
+                popup_a5ad30e25e6545f9ae1a233c237136bd.setContent(html_46f2cd9e284a4c7a9ff6612fd11d7626);
+            
+        
+
+        circle_marker_6507620ae1786bcd3c64cfea8244cd34.bindPopup(popup_a5ad30e25e6545f9ae1a233c237136bd)
+        ;
+
+        
+    
+    
+            var circle_marker_abfa5d5f4007e84c30d4b3a1c3943ace = L.circleMarker(
+                [44.9772995, -93.2654692],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.778, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_ebdb39a81be8e1b1d266c03af80d802e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_061b2fb315bc6f9cfd1f5d64f57f6b05 = $(`<div id="html_061b2fb315bc6f9cfd1f5d64f57f6b05" style="width: 100.0%; height: 100.0%;">Minneapolis, MN: 5889.0 violent crimes</div>`)[0];
+                popup_ebdb39a81be8e1b1d266c03af80d802e.setContent(html_061b2fb315bc6f9cfd1f5d64f57f6b05);
+            
+        
+
+        circle_marker_abfa5d5f4007e84c30d4b3a1c3943ace.bindPopup(popup_ebdb39a81be8e1b1d266c03af80d802e)
+        ;
+
+        
+    
+    
+            var circle_marker_26182fc6854305145c3caf77a90b3cf4 = L.circleMarker(
+                [39.1406267, -77.2075612],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.89, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_be75bf885af28b49df46e3000f961c8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76b8027b933aff4c8d8cb36f6d10222b = $(`<div id="html_76b8027b933aff4c8d8cb36f6d10222b" style="width: 100.0%; height: 100.0%;">Montgomery County, MD: 2445.0 violent crimes</div>`)[0];
+                popup_be75bf885af28b49df46e3000f961c8f.setContent(html_76b8027b933aff4c8d8cb36f6d10222b);
+            
+        
+
+        circle_marker_26182fc6854305145c3caf77a90b3cf4.bindPopup(popup_be75bf885af28b49df46e3000f961c8f)
+        ;
+
+        
+    
+    
+            var circle_marker_bfd6c8f6a6381fc54a9f0b04dabd356e = L.circleMarker(
+                [36.1622767, -86.7742984],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.978, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_10f9f7a63906e700c7f27ad18b4a570d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb4b40fbe109a3602389f08796ab1cb9 = $(`<div id="html_fb4b40fbe109a3602389f08796ab1cb9" style="width: 100.0%; height: 100.0%;">Nashville, TN: 7989.0 violent crimes</div>`)[0];
+                popup_10f9f7a63906e700c7f27ad18b4a570d.setContent(html_fb4b40fbe109a3602389f08796ab1cb9);
+            
+        
+
+        circle_marker_bfd6c8f6a6381fc54a9f0b04dabd356e.bindPopup(popup_10f9f7a63906e700c7f27ad18b4a570d)
+        ;
+
+        
+    
+    
+            var circle_marker_3a27f44bfa27ca1e4403d09bc8e1a3cb = L.circleMarker(
+                [40.7352994, -73.5615778],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.574, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_3a6896fe14d90b14ed045139b6be7f14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7e61baaae5355189d1db183e3b288f0 = $(`<div id="html_a7e61baaae5355189d1db183e3b288f0" style="width: 100.0%; height: 100.0%;">Nassau County, NY: 2287.0 violent crimes</div>`)[0];
+                popup_3a6896fe14d90b14ed045139b6be7f14.setContent(html_a7e61baaae5355189d1db183e3b288f0);
+            
+        
+
+        circle_marker_3a27f44bfa27ca1e4403d09bc8e1a3cb.bindPopup(popup_3a6896fe14d90b14ed045139b6be7f14)
+        ;
+
+        
+    
+    
+            var circle_marker_c0eabd73238b1a506cdf5a44e567b0ef = L.circleMarker(
+                [29.9759983, -90.0782127],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.938, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_8699c8d01465c812a19dd60b638f7447 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf71c2c10285f08a6114dbd3bb862e8f = $(`<div id="html_cf71c2c10285f08a6114dbd3bb862e8f" style="width: 100.0%; height: 100.0%;">New Orleans, LA: 10969.0 violent crimes</div>`)[0];
+                popup_8699c8d01465c812a19dd60b638f7447.setContent(html_cf71c2c10285f08a6114dbd3bb862e8f);
+            
+        
+
+        circle_marker_c0eabd73238b1a506cdf5a44e567b0ef.bindPopup(popup_8699c8d01465c812a19dd60b638f7447)
+        ;
+
+        
+    
+    
+            var circle_marker_21e70dd006739c4c0bec0b9772c5ac12 = L.circleMarker(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 340.78, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_5ba909e55f296be4bcd2dc117e016a65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b552def6b9980ba09787287e40748522 = $(`<div id="html_b552def6b9980ba09787287e40748522" style="width: 100.0%; height: 100.0%;">New York City, NY: 170390.0 violent crimes</div>`)[0];
+                popup_5ba909e55f296be4bcd2dc117e016a65.setContent(html_b552def6b9980ba09787287e40748522);
+            
+        
+
+        circle_marker_21e70dd006739c4c0bec0b9772c5ac12.bindPopup(popup_5ba909e55f296be4bcd2dc117e016a65)
+        ;
+
+        
+    
+    
+            var circle_marker_dfa51ac3f2ead9576de4a9b54910c332 = L.circleMarker(
+                [40.735657, -74.1723667],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.804, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_d5c9b6e5403c0ccedeb41018c6c2d5dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05d7c64a7aa833cd6e568b7098dc59ec = $(`<div id="html_05d7c64a7aa833cd6e568b7098dc59ec" style="width: 100.0%; height: 100.0%;">Newark, NJ: 9402.0 violent crimes</div>`)[0];
+                popup_d5c9b6e5403c0ccedeb41018c6c2d5dc.setContent(html_05d7c64a7aa833cd6e568b7098dc59ec);
+            
+        
+
+        circle_marker_dfa51ac3f2ead9576de4a9b54910c332.bindPopup(popup_d5c9b6e5403c0ccedeb41018c6c2d5dc)
+        ;
+
+        
+    
+    
+            var circle_marker_0b0d09b89c29f36bb3158aeeda2b7306 = L.circleMarker(
+                [37.8044557, -122.271356],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.968, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_d77a341bb3e4ef89c7da5a481deacead = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61487e12309ea0511c1e1f697bc26eda = $(`<div id="html_61487e12309ea0511c1e1f697bc26eda" style="width: 100.0%; height: 100.0%;">Oakland, CA: 9484.0 violent crimes</div>`)[0];
+                popup_d77a341bb3e4ef89c7da5a481deacead.setContent(html_61487e12309ea0511c1e1f697bc26eda);
+            
+        
+
+        circle_marker_0b0d09b89c29f36bb3158aeeda2b7306.bindPopup(popup_d77a341bb3e4ef89c7da5a481deacead)
+        ;
+
+        
+    
+    
+            var circle_marker_1f3c5b40bb55e822c2bf241b5d76cf00 = L.circleMarker(
+                [35.4729886, -97.5170536],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.132, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_6b7f83fc42fd365df49e3ed7757770d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_241e79760a9ce0749304b982e5f63585 = $(`<div id="html_241e79760a9ce0749304b982e5f63585" style="width: 100.0%; height: 100.0%;">Oklahoma City, OK: 5066.0 violent crimes</div>`)[0];
+                popup_6b7f83fc42fd365df49e3ed7757770d1.setContent(html_241e79760a9ce0749304b982e5f63585);
+            
+        
+
+        circle_marker_1f3c5b40bb55e822c2bf241b5d76cf00.bindPopup(popup_6b7f83fc42fd365df49e3ed7757770d1)
+        ;
+
+        
+    
+    
+            var circle_marker_95b5a7eb62e3503dec587560f3a72485 = L.circleMarker(
+                [41.2587459, -95.9383758],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.484, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_e59ab62f6344f760e14e91f9f5967168 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddc28aba5a64c9adef7c4fceef92b4ca = $(`<div id="html_ddc28aba5a64c9adef7c4fceef92b4ca" style="width: 100.0%; height: 100.0%;">Omaha, NE: 3242.0 violent crimes</div>`)[0];
+                popup_e59ab62f6344f760e14e91f9f5967168.setContent(html_ddc28aba5a64c9adef7c4fceef92b4ca);
+            
+        
+
+        circle_marker_95b5a7eb62e3503dec587560f3a72485.bindPopup(popup_e59ab62f6344f760e14e91f9f5967168)
+        ;
+
+        
+    
+    
+            var circle_marker_43c9629072998d99fd8921b69618ef88 = L.circleMarker(
+                [28.5421109, -81.3790304],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.022, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_a6fb8f2b06baf814bd2e57e1ed872f44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e18d6c978e0db55a937e04b5bf9163b6 = $(`<div id="html_e18d6c978e0db55a937e04b5bf9163b6" style="width: 100.0%; height: 100.0%;">Orlando, FL: 2011.0 violent crimes</div>`)[0];
+                popup_a6fb8f2b06baf814bd2e57e1ed872f44.setContent(html_e18d6c978e0db55a937e04b5bf9163b6);
+            
+        
+
+        circle_marker_43c9629072998d99fd8921b69618ef88.bindPopup(popup_a6fb8f2b06baf814bd2e57e1ed872f44)
+        ;
+
+        
+    
+    
+            var circle_marker_dd5931d9e82d7b60bca6facbd370b26b = L.circleMarker(
+                [39.9527237, -75.1635262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.902, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_6ed49156846af71499d71d96b404ffa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df62bd70a2a9b304d1bfe83609e421f4 = $(`<div id="html_df62bd70a2a9b304d1bfe83609e421f4" style="width: 100.0%; height: 100.0%;">Philadelphia, PA: 22451.0 violent crimes</div>`)[0];
+                popup_6ed49156846af71499d71d96b404ffa1.setContent(html_df62bd70a2a9b304d1bfe83609e421f4);
+            
+        
+
+        circle_marker_dd5931d9e82d7b60bca6facbd370b26b.bindPopup(popup_6ed49156846af71499d71d96b404ffa1)
+        ;
+
+        
+    
+    
+            var circle_marker_ebeca2038e10991bfa8a76f24686189b = L.circleMarker(
+                [33.4484367, -112.074141],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.02, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_645431256903be7bf4087345856561a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb27aba083e77b58beff3daa5ec2152a = $(`<div id="html_bb27aba083e77b58beff3daa5ec2152a" style="width: 100.0%; height: 100.0%;">Phoenix, AZ: 11010.0 violent crimes</div>`)[0];
+                popup_645431256903be7bf4087345856561a4.setContent(html_bb27aba083e77b58beff3daa5ec2152a);
+            
+        
+
+        circle_marker_ebeca2038e10991bfa8a76f24686189b.bindPopup(popup_645431256903be7bf4087345856561a4)
+        ;
+
+        
+    
+    
+            var circle_marker_a3fba3d2c96ccb99630e37875bd6bde4 = L.circleMarker(
+                [40.4416941, -79.9900861],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.588, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_691987c67564ba333b70e254a8b5f3c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fbe8cdcdd0c4042fbfa9bcc6d92db0a = $(`<div id="html_2fbe8cdcdd0c4042fbfa9bcc6d92db0a" style="width: 100.0%; height: 100.0%;">Pittsburgh, PA: 4294.0 violent crimes</div>`)[0];
+                popup_691987c67564ba333b70e254a8b5f3c2.setContent(html_2fbe8cdcdd0c4042fbfa9bcc6d92db0a);
+            
+        
+
+        circle_marker_a3fba3d2c96ccb99630e37875bd6bde4.bindPopup(popup_691987c67564ba333b70e254a8b5f3c2)
+        ;
+
+        
+    
+    
+            var circle_marker_483561c8500e918805f21eaa1fe3584b = L.circleMarker(
+                [45.5202471, -122.674194],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.242, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_b9bb2d0d76f431f85e1578f3ca55b7de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaa2b66d60a0aa08ab13e72666a5d4fb = $(`<div id="html_eaa2b66d60a0aa08ab13e72666a5d4fb" style="width: 100.0%; height: 100.0%;">Portland, OR: 8121.0 violent crimes</div>`)[0];
+                popup_b9bb2d0d76f431f85e1578f3ca55b7de.setContent(html_eaa2b66d60a0aa08ab13e72666a5d4fb);
+            
+        
+
+        circle_marker_483561c8500e918805f21eaa1fe3584b.bindPopup(popup_b9bb2d0d76f431f85e1578f3ca55b7de)
+        ;
+
+        
+    
+    
+            var circle_marker_21ec7af639aa73583c6a7d5166a449ed = L.circleMarker(
+                [38.803929, -76.8518695],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.404, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_6a8fba95242cf94addda0f2075c44d2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9642a2438237e960a4b456e2adc6c46b = $(`<div id="html_9642a2438237e960a4b456e2adc6c46b" style="width: 100.0%; height: 100.0%;">Prince George's County, MD: 7702.0 violent crimes</div>`)[0];
+                popup_6a8fba95242cf94addda0f2075c44d2d.setContent(html_9642a2438237e960a4b456e2adc6c46b);
+            
+        
+
+        circle_marker_21ec7af639aa73583c6a7d5166a449ed.bindPopup(popup_6a8fba95242cf94addda0f2075c44d2d)
+        ;
+
+        
+    
+    
+            var circle_marker_1958f0e3441e694b961da68d2a907862 = L.circleMarker(
+                [35.7803977, -78.6390989],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.522, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_f78488e4a6414986d1aeda8803698c20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98fd85f7d6807e9a3b6be9dd41069100 = $(`<div id="html_98fd85f7d6807e9a3b6be9dd41069100" style="width: 100.0%; height: 100.0%;">Raleigh, NC: 1761.0 violent crimes</div>`)[0];
+                popup_f78488e4a6414986d1aeda8803698c20.setContent(html_98fd85f7d6807e9a3b6be9dd41069100);
+            
+        
+
+        circle_marker_1958f0e3441e694b961da68d2a907862.bindPopup(popup_f78488e4a6414986d1aeda8803698c20)
+        ;
+
+        
+    
+    
+            var circle_marker_250b9921ac49e6213657d38fc5c50aa9 = L.circleMarker(
+                [38.5810606, -121.493895],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.792, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_654f585355def5ecd2d7c91ded18f13f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeb915185962d4068db729e998a5f01f = $(`<div id="html_eeb915185962d4068db729e998a5f01f" style="width: 100.0%; height: 100.0%;">Sacramento, CA: 4896.0 violent crimes</div>`)[0];
+                popup_654f585355def5ecd2d7c91ded18f13f.setContent(html_eeb915185962d4068db729e998a5f01f);
+            
+        
+
+        circle_marker_250b9921ac49e6213657d38fc5c50aa9.bindPopup(popup_654f585355def5ecd2d7c91ded18f13f)
+        ;
+
+        
+    
+    
+            var circle_marker_4c3b2517ad5a8421300f5ea848602da9 = L.circleMarker(
+                [40.7596198, -111.886797],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.638, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_c11a1f5ebf120c11c92f0ac4c354bb56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41119c4e6ccc942fb7c865a4dddba00d = $(`<div id="html_41119c4e6ccc942fb7c865a4dddba00d" style="width: 100.0%; height: 100.0%;">Salt Lake City, UT: 1319.0 violent crimes</div>`)[0];
+                popup_c11a1f5ebf120c11c92f0ac4c354bb56.setContent(html_41119c4e6ccc942fb7c865a4dddba00d);
+            
+        
+
+        circle_marker_4c3b2517ad5a8421300f5ea848602da9.bindPopup(popup_c11a1f5ebf120c11c92f0ac4c354bb56)
+        ;
+
+        
+    
+    
+            var circle_marker_39878be433e25b74a99149bfbb5966b2 = L.circleMarker(
+                [29.3067354, -98.60465674366606],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.146, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_b52802ce73e942b5d9b07256de4b9e60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe12bc199f60afe0f8cf345d268bd4ec = $(`<div id="html_fe12bc199f60afe0f8cf345d268bd4ec" style="width: 100.0%; height: 100.0%;">San Antonio, TX: 7573.0 violent crimes</div>`)[0];
+                popup_b52802ce73e942b5d9b07256de4b9e60.setContent(html_fe12bc199f60afe0f8cf345d268bd4ec);
+            
+        
+
+        circle_marker_39878be433e25b74a99149bfbb5966b2.bindPopup(popup_b52802ce73e942b5d9b07256de4b9e60)
+        ;
+
+        
+    
+    
+            var circle_marker_87cfaaf239401b5d2716dcf2d3c9d5a6 = L.circleMarker(
+                [32.7174202, -117.162772],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.66, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_fe096fc82ec6203b844a8785732a804a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fbf68d631a4c2619f4ab28ee6cde062 = $(`<div id="html_3fbf68d631a4c2619f4ab28ee6cde062" style="width: 100.0%; height: 100.0%;">San Diego, CA: 13830.0 violent crimes</div>`)[0];
+                popup_fe096fc82ec6203b844a8785732a804a.setContent(html_3fbf68d631a4c2619f4ab28ee6cde062);
+            
+        
+
+        circle_marker_87cfaaf239401b5d2716dcf2d3c9d5a6.bindPopup(popup_fe096fc82ec6203b844a8785732a804a)
+        ;
+
+        
+    
+    
+            var circle_marker_13d8bc48f7f5e66113fe66dc71629c7c = L.circleMarker(
+                [37.7792588, -122.4193286],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.32, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_bf1f241b064e8b52511c8bd5426fa7f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7ae72be8319995eb843ac55d9125f53 = $(`<div id="html_f7ae72be8319995eb843ac55d9125f53" style="width: 100.0%; height: 100.0%;">San Francisco, CA: 12160.0 violent crimes</div>`)[0];
+                popup_bf1f241b064e8b52511c8bd5426fa7f1.setContent(html_f7ae72be8319995eb843ac55d9125f53);
+            
+        
+
+        circle_marker_13d8bc48f7f5e66113fe66dc71629c7c.bindPopup(popup_bf1f241b064e8b52511c8bd5426fa7f1)
+        ;
+
+        
+    
+    
+            var circle_marker_ce17197e2a15084b24bb7e5b5d149712 = L.circleMarker(
+                [37.3361663, -121.890591],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.516, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_b4da7b86ac95aed28eb8f1fbf32a4ef8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2c6eb4a809e7f5fc0ecd64f6e31cab1 = $(`<div id="html_f2c6eb4a809e7f5fc0ecd64f6e31cab1" style="width: 100.0%; height: 100.0%;">San Jose, CA: 5258.0 violent crimes</div>`)[0];
+                popup_b4da7b86ac95aed28eb8f1fbf32a4ef8.setContent(html_f2c6eb4a809e7f5fc0ecd64f6e31cab1);
+            
+        
+
+        circle_marker_ce17197e2a15084b24bb7e5b5d149712.bindPopup(popup_b4da7b86ac95aed28eb8f1fbf32a4ef8)
+        ;
+
+        
+    
+    
+            var circle_marker_9a8e7f4f110f06827abdd2819e6032a8 = L.circleMarker(
+                [47.6038321, -122.330062],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.442, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_d2d1812deef35915cad996f1b32b038f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b357d8787ecdc0ae9103770959aaaee = $(`<div id="html_3b357d8787ecdc0ae9103770959aaaee" style="width: 100.0%; height: 100.0%;">Seattle, WA: 7221.0 violent crimes</div>`)[0];
+                popup_d2d1812deef35915cad996f1b32b038f.setContent(html_3b357d8787ecdc0ae9103770959aaaee);
+            
+        
+
+        circle_marker_9a8e7f4f110f06827abdd2819e6032a8.bindPopup(popup_d2d1812deef35915cad996f1b32b038f)
+        ;
+
+        
+    
+    
+            var circle_marker_fd25ebb9f9b2f1485f0daa1419a7cca2 = L.circleMarker(
+                [38.6280278, -90.1910154],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.152, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_6b5ae76e509ccfc39a62a98f113ca7fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9fef47aaa88e47bda74f3b21e101dc0 = $(`<div id="html_e9fef47aaa88e47bda74f3b21e101dc0" style="width: 100.0%; height: 100.0%;">St. Louis, MO: 14076.0 violent crimes</div>`)[0];
+                popup_6b5ae76e509ccfc39a62a98f113ca7fe.setContent(html_e9fef47aaa88e47bda74f3b21e101dc0);
+            
+        
+
+        circle_marker_fd25ebb9f9b2f1485f0daa1419a7cca2.bindPopup(popup_6b5ae76e509ccfc39a62a98f113ca7fe)
+        ;
+
+        
+    
+    
+            var circle_marker_4962819ede069b507e55fbba7551dc9b = L.circleMarker(
+                [40.8832318, -72.8578027],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.472, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_c6241a971d63dc3596f38bf86842afb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28671b45ce32b844f279eef23b5a0c70 = $(`<div id="html_28671b45ce32b844f279eef23b5a0c70" style="width: 100.0%; height: 100.0%;">Suffolk County, NY: 3236.0 violent crimes</div>`)[0];
+                popup_c6241a971d63dc3596f38bf86842afb6.setContent(html_28671b45ce32b844f279eef23b5a0c70);
+            
+        
+
+        circle_marker_4962819ede069b507e55fbba7551dc9b.bindPopup(popup_c6241a971d63dc3596f38bf86842afb6)
+        ;
+
+        
+    
+    
+            var circle_marker_94084a204d9e5505b54f965f98af4d6d = L.circleMarker(
+                [27.9477595, -82.458444],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.06, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_7e18831df1d613fa73a83047ee13dcce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_790cd1bcee037d89b823da291fee4a8a = $(`<div id="html_790cd1bcee037d89b823da291fee4a8a" style="width: 100.0%; height: 100.0%;">Tampa, FL: 10030.0 violent crimes</div>`)[0];
+                popup_7e18831df1d613fa73a83047ee13dcce.setContent(html_790cd1bcee037d89b823da291fee4a8a);
+            
+        
+
+        circle_marker_94084a204d9e5505b54f965f98af4d6d.bindPopup(popup_7e18831df1d613fa73a83047ee13dcce)
+        ;
+
+        
+    
+    
+            var circle_marker_3a0daf8a8c5d0d12fbaa143917988394 = L.circleMarker(
+                [32.2228765, -110.974847],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.792, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_96caee6af7337a8fa4e9a1eebf30e220 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5b61d24c309e14bb1aac3a1330d613b = $(`<div id="html_f5b61d24c309e14bb1aac3a1330d613b" style="width: 100.0%; height: 100.0%;">Tucson, AZ: 3896.0 violent crimes</div>`)[0];
+                popup_96caee6af7337a8fa4e9a1eebf30e220.setContent(html_f5b61d24c309e14bb1aac3a1330d613b);
+            
+        
+
+        circle_marker_3a0daf8a8c5d0d12fbaa143917988394.bindPopup(popup_96caee6af7337a8fa4e9a1eebf30e220)
+        ;
+
+        
+    
+    
+            var circle_marker_a8737dbe91d051528c2bf70dffe50ff3 = L.circleMarker(
+                [36.1563122, -95.9927516],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.846, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_12ed67b5927cffc2a69b000af869ff28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fca940ae214583f592a1332dc051050b = $(`<div id="html_fca940ae214583f592a1332dc051050b" style="width: 100.0%; height: 100.0%;">Tulsa, OK: 4923.0 violent crimes</div>`)[0];
+                popup_12ed67b5927cffc2a69b000af869ff28.setContent(html_fca940ae214583f592a1332dc051050b);
+            
+        
+
+        circle_marker_a8737dbe91d051528c2bf70dffe50ff3.bindPopup(popup_12ed67b5927cffc2a69b000af869ff28)
+        ;
+
+        
+    
+    
+            var circle_marker_09da4827b9685351fa332bbc01eaacbc = L.circleMarker(
+                [36.8496579, -75.9760751],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.174, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_6d6664d371e00e616f469dbb9891b62f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_070aa1ef9f2d4eb9470b055ab399832c = $(`<div id="html_070aa1ef9f2d4eb9470b055ab399832c" style="width: 100.0%; height: 100.0%;">Virginia Beach, VA: 1087.0 violent crimes</div>`)[0];
+                popup_6d6664d371e00e616f469dbb9891b62f.setContent(html_070aa1ef9f2d4eb9470b055ab399832c);
+            
+        
+
+        circle_marker_09da4827b9685351fa332bbc01eaacbc.bindPopup(popup_6d6664d371e00e616f469dbb9891b62f)
+        ;
+
+        
+    
+    
+            var circle_marker_f1dcc20f4c1149f2100702ade947c668 = L.circleMarker(
+                [38.8950368, -77.0365427],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.33, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_3f9abfe0a432a83d9f6d201b5406645b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33fe45d92a3fce03ce891f09890e3d24 = $(`<div id="html_33fe45d92a3fce03ce891f09890e3d24" style="width: 100.0%; height: 100.0%;">Washington, DC: 14665.0 violent crimes</div>`)[0];
+                popup_3f9abfe0a432a83d9f6d201b5406645b.setContent(html_33fe45d92a3fce03ce891f09890e3d24);
+            
+        
+
+        circle_marker_f1dcc20f4c1149f2100702ade947c668.bindPopup(popup_3f9abfe0a432a83d9f6d201b5406645b)
+        ;
+
+        
+    
+    
+            var circle_marker_0580b0f3bff31ab246bf77ed2c566e4e = L.circleMarker(
+                [37.6922361, -97.3375448],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.344, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ddb08dce97424deac2263ee08ea0675b);
+        
+    
+        var popup_083b971b1f5e5c6cba2389bdd47ccce6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6efdb83f9059a746f9db95016426eab8 = $(`<div id="html_6efdb83f9059a746f9db95016426eab8" style="width: 100.0%; height: 100.0%;">Wichita, KS: 2672.0 violent crimes</div>`)[0];
+                popup_083b971b1f5e5c6cba2389bdd47ccce6.setContent(html_6efdb83f9059a746f9db95016426eab8);
+            
+        
+
+        circle_marker_0580b0f3bff31ab246bf77ed2c566e4e.bindPopup(popup_083b971b1f5e5c6cba2389bdd47ccce6)
+        ;
+
+        
+    
+    
+            marker_cluster_ddb08dce97424deac2263ee08ea0675b.addTo(map_fed6e33e284e99820a90e4af1850ea0c);
+        
+</script>
+</html>
