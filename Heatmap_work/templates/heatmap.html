@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Heatmap</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/simpleheat/simpleheat.js"></script> <!-- Include SimpleHeat -->
+    <script src="{{ url_for('static', filename='HeatLayer.js') }}"></script> <!-- Local Leaflet Heat plugin source https://github.com/Leaflet/Leaflet.heat-->
+    <style>
+        #map { width: 100%; height: 600px; }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <label for="yearDropdown">Select Year:</label>
+        <select id="yearDropdown" onchange="updateMap(this.value)">
+            <option value="">--Select a Year--</option>
+            {% for year in years %}
+                <option value="{{ year }}">{{ year }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div id="map"></div>
+    
+    <script>
+        // Initialize the map
+        const map = L.map('map').setView([39.8283, -98.5795], 4);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        // Function to update the heatmap based on selected year
+        function updateMap(year) {
+            fetch(`/update_map/${year}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Clear existing heatmap layer if any
+                    if (window.heatmapLayer) {
+                        map.removeLayer(window.heatmapLayer);
+                    }
+
+                    // Create a new heatmap layer
+                    var heatData = data.heat_data;
+                    window.heatmapLayer = L.heatLayer(heatData, { radius: 20 }).addTo(map);
+                })
+                .catch(error => console.error('Error fetching heatmap data:', error));
+        }
+
+        // Automatically update the map for the first available year on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdown = document.getElementById('yearDropdown');
+            const initialYear = dropdown.options[dropdown.selectedIndex].value;
+            if (initialYear) {
+                updateMap(initialYear); // Show the heatmap for the initially selected year
+            }
+        });
+    </script>
+</body>
+</html>
