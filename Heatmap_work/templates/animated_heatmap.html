@@ -12,6 +12,8 @@
     </style>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/simpleheat/simpleheat.js"></script> <!-- Include SimpleHeat -->
+    <script src="{{ url_for('static', filename='HeatLayer.js') }}"></script> <!-- Local Leaflet Heat plugin source https://github.com/Leaflet/Leaflet.heat-->
 </head>
 <body>
     <h1>Animated Heatmap of Crime Rates (1975 - 2015)</h1>
@@ -32,34 +34,40 @@
         var currentYear = 0;
 
         function loadHeatmap(year) {
-            // Remove existing heatmap layer if any
-            if (window.heatmapLayer) {
-                map.removeLayer(window.heatmapLayer);
-            }
+    // Remove existing heatmap layer if any
+    if (window.heatmapLayer) {
+        map.removeLayer(window.heatmapLayer);
+    }
 
-            // Load the heatmap for the current year
-            var heatmapFile = 'static/crime_heatmap_' + years[year] + '.html';
-            fetch(heatmapFile)
-                .then(response => response.text())
-                .then(data => {
-                    // Create a new div to hold the heatmap
-                    var heatmapDiv = document.createElement('div');
-                    heatmapDiv.innerHTML = data;
-                    document.body.appendChild(heatmapDiv);
+    // Load the heatmap for the current year
+    var heatmapFile = 'static/crime_heatmap_' + years[year] + '.html';
+    fetch(heatmapFile)
+        .then(response => response.text())
+        .then(data => {
+            // Create a new div to hold the heatmap
+            var heatmapDiv = document.createElement('div');
+            heatmapDiv.innerHTML = data;
+            document.body.appendChild(heatmapDiv);
 
-                    // Extract the map layer from the HTML and add it to the main map
-                    var heatmapLayer = L.layerGroup();
-                    // Assuming the heatmap HTML has a specific structure to extract coordinates
-                    // You might need to adjust this part based on how your heatmap HTML is structured
-                    var heatData = extractHeatDataFromHTML(heatmapDiv.innerHTML);
-                    heatmapLayer.addLayer(L.heatLayer(heatData, { radius: 20 }));
-                    heatmapLayer.addTo(map);
-                    window.heatmapLayer = heatmapLayer;
+            // Extract the map layer from the HTML and add it to the main map
+            var heatmapLayer = L.layerGroup();
+            var heatData = extractHeatDataFromHTML(heatmapDiv.innerHTML);
 
-                    // Remove the heatmap div after use
-                    document.body.removeChild(heatmapDiv);
-                });
-        }
+            // Create the heat layer with options for better performance
+            heatmapLayer = L.heatLayer(heatData, {
+                radius: 20,
+                blur: 15,
+                maxZoom: 1,
+                // Add any other options that might help with performance
+            });
+
+            heatmapLayer.addTo(map);
+            window.heatmapLayer = heatmapLayer;
+
+            // Remove the heatmap div after use
+            document.body.removeChild(heatmapDiv);
+        });
+}
 
         function animateHeatmap() {
             loadHeatmap(currentYear);
