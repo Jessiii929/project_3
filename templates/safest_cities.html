@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_609011cf88016e9a806bf4bbabdbf381 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 70vh;
+                    vertical-align: center; 
+                    /* left: 0.0%;
+                    top: 0.0%; */
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_609011cf88016e9a806bf4bbabdbf381" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_609011cf88016e9a806bf4bbabdbf381 = L.map(
+                "map_609011cf88016e9a806bf4bbabdbf381",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_523959befc426522dab16b2f18b83cbe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_523959befc426522dab16b2f18b83cbe.addTo(map_609011cf88016e9a806bf4bbabdbf381);
+        
+    
+            var marker_cluster_098abe7bb7e6a40a11e19257183d6adc = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_f4ad75d666ef81249ab92b671a32861c = L.marker(
+                [35.0841034, -106.650985],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_f59b84862efa907b8f0278cbe642b64b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f4ad75d666ef81249ab92b671a32861c.setIcon(icon_f59b84862efa907b8f0278cbe642b64b);
+        
+    
+        var popup_febb9070f2cfed5bc49f2f00aaeaccc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5fc651f6112bb322570c19cb23825ef = $(`<div id="html_f5fc651f6112bb322570c19cb23825ef" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Albuquerque, NM Crime Index: 0.0083</div>`)[0];
+                popup_febb9070f2cfed5bc49f2f00aaeaccc5.setContent(html_f5fc651f6112bb322570c19cb23825ef);
+            
+        
+
+        marker_f4ad75d666ef81249ab92b671a32861c.bindPopup(popup_febb9070f2cfed5bc49f2f00aaeaccc5)
+        ;
+
+        
+    
+    
+            var marker_22cd6fb21f7dc66dbc851956517952c8 = L.marker(
+                [32.7355816, -97.1071186],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_55a518397b6b57cb064e7a508a73ebbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22cd6fb21f7dc66dbc851956517952c8.setIcon(icon_55a518397b6b57cb064e7a508a73ebbe);
+        
+    
+        var popup_4269f02de1bfa37a99405f67fd62cdce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb7ea55c0939c60c786228a21b862c0f = $(`<div id="html_cb7ea55c0939c60c786228a21b862c0f" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Arlington, TX Crime Index: 0.0025</div>`)[0];
+                popup_4269f02de1bfa37a99405f67fd62cdce.setContent(html_cb7ea55c0939c60c786228a21b862c0f);
+            
+        
+
+        marker_22cd6fb21f7dc66dbc851956517952c8.bindPopup(popup_4269f02de1bfa37a99405f67fd62cdce)
+        ;
+
+        
+    
+    
+            var marker_ae6530b6d28079893edc3f65bdb35b9d = L.marker(
+                [33.7489924, -84.3902644],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_e3e31636c2c68f70ecc6f006b94f8962 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ae6530b6d28079893edc3f65bdb35b9d.setIcon(icon_e3e31636c2c68f70ecc6f006b94f8962);
+        
+    
+        var popup_36856dff787331c91b07a00a69d1efb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5608d5671b4c6f274d7444cc577e0778 = $(`<div id="html_5608d5671b4c6f274d7444cc577e0778" style="width: 100.0%; height: 100.0%;">Average city: Atlanta, GA Crime Index: 0.0164</div>`)[0];
+                popup_36856dff787331c91b07a00a69d1efb6.setContent(html_5608d5671b4c6f274d7444cc577e0778);
+            
+        
+
+        marker_ae6530b6d28079893edc3f65bdb35b9d.bindPopup(popup_36856dff787331c91b07a00a69d1efb6)
+        ;
+
+        
+    
+    
+            var marker_26ad8f42197fe0b56cd0eec7ed502390 = L.marker(
+                [41.7571701, -88.3147539],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_c74fb9baad767a905c25dc9437b6e5a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26ad8f42197fe0b56cd0eec7ed502390.setIcon(icon_c74fb9baad767a905c25dc9437b6e5a3);
+        
+    
+        var popup_0c03f3685ddb3c111cf98cb55b747fb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04e610fda3226ff2f5ee7670157194c6 = $(`<div id="html_04e610fda3226ff2f5ee7670157194c6" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Aurora, CO Crime Index: 0.0052</div>`)[0];
+                popup_0c03f3685ddb3c111cf98cb55b747fb7.setContent(html_04e610fda3226ff2f5ee7670157194c6);
+            
+        
+
+        marker_26ad8f42197fe0b56cd0eec7ed502390.bindPopup(popup_0c03f3685ddb3c111cf98cb55b747fb7)
+        ;
+
+        
+    
+    
+            var marker_d390b158566db5f1060e60c4195261e2 = L.marker(
+                [30.341598599999998, -97.58721349128422],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_a0fde8fb44e218ce891206a69492a374 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d390b158566db5f1060e60c4195261e2.setIcon(icon_a0fde8fb44e218ce891206a69492a374);
+        
+    
+        var popup_1ab226d8b002e15319d9066a67a80f12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_876275c36d303c80f172b090d9c05ff5 = $(`<div id="html_876275c36d303c80f172b090d9c05ff5" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Austin, TX Crime Index: 0.0040</div>`)[0];
+                popup_1ab226d8b002e15319d9066a67a80f12.setContent(html_876275c36d303c80f172b090d9c05ff5);
+            
+        
+
+        marker_d390b158566db5f1060e60c4195261e2.bindPopup(popup_1ab226d8b002e15319d9066a67a80f12)
+        ;
+
+        
+    
+    
+            var marker_ed9edcda96d72b381cb4a3086b245089 = L.marker(
+                [39.4445243, -76.6483482],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_1b1aa9a7108a1f82f6931d968dffa90a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed9edcda96d72b381cb4a3086b245089.setIcon(icon_1b1aa9a7108a1f82f6931d968dffa90a);
+        
+    
+        var popup_2b083535243ccf4b416605f192b08b13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1797dc602cc941b19a517ae9f434ff4d = $(`<div id="html_1797dc602cc941b19a517ae9f434ff4d" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Baltimore County, MD Crime Index: 0.0020</div>`)[0];
+                popup_2b083535243ccf4b416605f192b08b13.setContent(html_1797dc602cc941b19a517ae9f434ff4d);
+            
+        
+
+        marker_ed9edcda96d72b381cb4a3086b245089.bindPopup(popup_2b083535243ccf4b416605f192b08b13)
+        ;
+
+        
+    
+    
+            var marker_3f1030ffd38a0bac744213cadfb23769 = L.marker(
+                [39.2908816, -76.610759],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_d179b0686882ec148c351bd595f96bc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3f1030ffd38a0bac744213cadfb23769.setIcon(icon_d179b0686882ec148c351bd595f96bc4);
+        
+    
+        var popup_117620d45493a0b0ec9f4062885953db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c1650e49bfbcdcb869d856b89f0fce6 = $(`<div id="html_1c1650e49bfbcdcb869d856b89f0fce6" style="width: 100.0%; height: 100.0%;">Average city: Baltimore, MD Crime Index: 0.0186</div>`)[0];
+                popup_117620d45493a0b0ec9f4062885953db.setContent(html_1c1650e49bfbcdcb869d856b89f0fce6);
+            
+        
+
+        marker_3f1030ffd38a0bac744213cadfb23769.bindPopup(popup_117620d45493a0b0ec9f4062885953db)
+        ;
+
+        
+    
+    
+            var marker_95d35a2bb0c6fb818153812bef726809 = L.marker(
+                [42.3554334, -71.060511],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_5de701b6fc62ff9965171d06bf130086 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_95d35a2bb0c6fb818153812bef726809.setIcon(icon_5de701b6fc62ff9965171d06bf130086);
+        
+    
+        var popup_4947f037473b4516556dd443ff9d53f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2e849403ce6402dda7103bb7fc0fd36 = $(`<div id="html_a2e849403ce6402dda7103bb7fc0fd36" style="width: 100.0%; height: 100.0%;">Average city: Boston, MA Crime Index: 0.0185</div>`)[0];
+                popup_4947f037473b4516556dd443ff9d53f9.setContent(html_a2e849403ce6402dda7103bb7fc0fd36);
+            
+        
+
+        marker_95d35a2bb0c6fb818153812bef726809.bindPopup(popup_4947f037473b4516556dd443ff9d53f9)
+        ;
+
+        
+    
+    
+            var marker_10da34fca2ffaa834a27fca3a869c34d = L.marker(
+                [42.8867166, -78.8783922],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_e9ce77d49931cfce16db9dd8ac17eb96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_10da34fca2ffaa834a27fca3a869c34d.setIcon(icon_e9ce77d49931cfce16db9dd8ac17eb96);
+        
+    
+        var popup_880bdc22f5738a1e9b306f4247b7ea58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5787caaab1d4a4e1a72099d56fee87fd = $(`<div id="html_5787caaab1d4a4e1a72099d56fee87fd" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Buffalo, NY Crime Index: 0.0079</div>`)[0];
+                popup_880bdc22f5738a1e9b306f4247b7ea58.setContent(html_5787caaab1d4a4e1a72099d56fee87fd);
+            
+        
+
+        marker_10da34fca2ffaa834a27fca3a869c34d.bindPopup(popup_880bdc22f5738a1e9b306f4247b7ea58)
+        ;
+
+        
+    
+    
+            var marker_fe3da1e16290632c790472e8717d3ce3 = L.marker(
+                [35.2272086, -80.8430827],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_8775002067956c72a2c78539e9f24f1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe3da1e16290632c790472e8717d3ce3.setIcon(icon_8775002067956c72a2c78539e9f24f1e);
+        
+    
+        var popup_c76965a45e3c8628de9e578764d2bec6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a814f6a5160b5c6082dccc9acb25353 = $(`<div id="html_8a814f6a5160b5c6082dccc9acb25353" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Charlotte, NC Crime Index: 0.0074</div>`)[0];
+                popup_c76965a45e3c8628de9e578764d2bec6.setContent(html_8a814f6a5160b5c6082dccc9acb25353);
+            
+        
+
+        marker_fe3da1e16290632c790472e8717d3ce3.bindPopup(popup_c76965a45e3c8628de9e578764d2bec6)
+        ;
+
+        
+    
+    
+            var marker_7795e726800907e8f2c0f8e39937eb48 = L.marker(
+                [41.8755616, -87.6244212],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_20e84aacc787def9a8563345a32bb059 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7795e726800907e8f2c0f8e39937eb48.setIcon(icon_20e84aacc787def9a8563345a32bb059);
+        
+    
+        var popup_be14941cc8b096346c9c08e45e18bc56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0918eacd7d50360cc2ed88b49947e54 = $(`<div id="html_d0918eacd7d50360cc2ed88b49947e54" style="width: 100.0%; height: 100.0%;">Average city: Chicago, IL Crime Index: 0.0118</div>`)[0];
+                popup_be14941cc8b096346c9c08e45e18bc56.setContent(html_d0918eacd7d50360cc2ed88b49947e54);
+            
+        
+
+        marker_7795e726800907e8f2c0f8e39937eb48.bindPopup(popup_be14941cc8b096346c9c08e45e18bc56)
+        ;
+
+        
+    
+    
+            var marker_9519159f7f159dca41410300debbaee9 = L.marker(
+                [39.1014537, -84.5124602],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_6b2bb179be0ee412c944816301ccb2b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9519159f7f159dca41410300debbaee9.setIcon(icon_6b2bb179be0ee412c944816301ccb2b5);
+        
+    
+        var popup_132d646357821cff2fc24a5336ecf8da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ea8736681d51f4b174abcd4598f675d = $(`<div id="html_7ea8736681d51f4b174abcd4598f675d" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Cincinnati, OH Crime Index: 0.0083</div>`)[0];
+                popup_132d646357821cff2fc24a5336ecf8da.setContent(html_7ea8736681d51f4b174abcd4598f675d);
+            
+        
+
+        marker_9519159f7f159dca41410300debbaee9.bindPopup(popup_132d646357821cff2fc24a5336ecf8da)
+        ;
+
+        
+    
+    
+            var marker_3c5881c0539ece4ed40593963fd50cae = L.marker(
+                [41.4996574, -81.6936772],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_5bab61d04451d0b4d1ea8bb0b1da2a19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3c5881c0539ece4ed40593963fd50cae.setIcon(icon_5bab61d04451d0b4d1ea8bb0b1da2a19);
+        
+    
+        var popup_73d7ef89bc7741892f8e7fd513a971a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_266ea6eef47b267a6859a450711f229f = $(`<div id="html_266ea6eef47b267a6859a450711f229f" style="width: 100.0%; height: 100.0%;">Average city: Cleveland, OH Crime Index: 0.0158</div>`)[0];
+                popup_73d7ef89bc7741892f8e7fd513a971a5.setContent(html_266ea6eef47b267a6859a450711f229f);
+            
+        
+
+        marker_3c5881c0539ece4ed40593963fd50cae.bindPopup(popup_73d7ef89bc7741892f8e7fd513a971a5)
+        ;
+
+        
+    
+    
+            var marker_7b4391d247a58b1ae3b821d7223dd95f = L.marker(
+                [39.9622601, -83.0007065],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_648d6a85f20d45e507e346e053cb3252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7b4391d247a58b1ae3b821d7223dd95f.setIcon(icon_648d6a85f20d45e507e346e053cb3252);
+        
+    
+        var popup_5cdc7a800aa0dc096045ab01d339385d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90a870f46d36b55bab2cf32e642c6536 = $(`<div id="html_90a870f46d36b55bab2cf32e642c6536" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Columbus, OH Crime Index: 0.0069</div>`)[0];
+                popup_5cdc7a800aa0dc096045ab01d339385d.setContent(html_90a870f46d36b55bab2cf32e642c6536);
+            
+        
+
+        marker_7b4391d247a58b1ae3b821d7223dd95f.bindPopup(popup_5cdc7a800aa0dc096045ab01d339385d)
+        ;
+
+        
+    
+    
+            var marker_bade06f78092bc96073794c7bba7db4a = L.marker(
+                [32.7762719, -96.7968559],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_14325173a0bd6d8ca7df72539b01c1d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bade06f78092bc96073794c7bba7db4a.setIcon(icon_14325173a0bd6d8ca7df72539b01c1d2);
+        
+    
+        var popup_fe377a513c112569bd504ccf0ce8fe51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6f8712caf6e061bd626a2b00ee505df = $(`<div id="html_d6f8712caf6e061bd626a2b00ee505df" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Dallas, TX Crime Index: 0.0089</div>`)[0];
+                popup_fe377a513c112569bd504ccf0ce8fe51.setContent(html_d6f8712caf6e061bd626a2b00ee505df);
+            
+        
+
+        marker_bade06f78092bc96073794c7bba7db4a.bindPopup(popup_fe377a513c112569bd504ccf0ce8fe51)
+        ;
+
+        
+    
+    
+            var marker_75ffac267a93629ffd340481acabffc1 = L.marker(
+                [39.7392364, -104.984862],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_36c95a60dca39a2cbf74bdf4c14d855e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_75ffac267a93629ffd340481acabffc1.setIcon(icon_36c95a60dca39a2cbf74bdf4c14d855e);
+        
+    
+        var popup_2d8b10b19baed10d037343a56dd6bfd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41d8b36603ebba5b3d7c8e93d20a5b4c = $(`<div id="html_41d8b36603ebba5b3d7c8e93d20a5b4c" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Denver, CO Crime Index: 0.0098</div>`)[0];
+                popup_2d8b10b19baed10d037343a56dd6bfd7.setContent(html_41d8b36603ebba5b3d7c8e93d20a5b4c);
+            
+        
+
+        marker_75ffac267a93629ffd340481acabffc1.bindPopup(popup_2d8b10b19baed10d037343a56dd6bfd7)
+        ;
+
+        
+    
+    
+            var marker_80b64faca50d606ce890209954005211 = L.marker(
+                [42.3315509, -83.0466403],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_bd8f686d70c5a0cd7e7c2346a49aa452 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_80b64faca50d606ce890209954005211.setIcon(icon_bd8f686d70c5a0cd7e7c2346a49aa452);
+        
+    
+        var popup_bcc3341852469e07ebcc7f53c4d4540b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc105aa3ce65ae6c4b72eb5947544a86 = $(`<div id="html_cc105aa3ce65ae6c4b72eb5947544a86" style="width: 100.0%; height: 100.0%;">Average city: Detroit, MI Crime Index: 0.0212</div>`)[0];
+                popup_bcc3341852469e07ebcc7f53c4d4540b.setContent(html_cc105aa3ce65ae6c4b72eb5947544a86);
+            
+        
+
+        marker_80b64faca50d606ce890209954005211.bindPopup(popup_bcc3341852469e07ebcc7f53c4d4540b)
+        ;
+
+        
+    
+    
+            var marker_2dbc66bb1e120c70ce317cb1d33bf982 = L.marker(
+                [31.7601164, -106.4870404],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_bef16c0f67b8c1b475f4ca094971d58e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2dbc66bb1e120c70ce317cb1d33bf982.setIcon(icon_bef16c0f67b8c1b475f4ca094971d58e);
+        
+    
+        var popup_9fac285c437b217a0a7d3d7c39a7466d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e39e27aa70616c76538786f6a513f77 = $(`<div id="html_2e39e27aa70616c76538786f6a513f77" style="width: 100.0%; height: 100.0%;">Best city to raise a family: El Paso, TX Crime Index: 0.0044</div>`)[0];
+                popup_9fac285c437b217a0a7d3d7c39a7466d.setContent(html_2e39e27aa70616c76538786f6a513f77);
+            
+        
+
+        marker_2dbc66bb1e120c70ce317cb1d33bf982.bindPopup(popup_9fac285c437b217a0a7d3d7c39a7466d)
+        ;
+
+        
+    
+    
+            var marker_66aa51c2f62705b308096c31bf838dfc = L.marker(
+                [38.8156356, -77.2836849],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_2166bdea9b47b6a5ae16dcece5197bc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_66aa51c2f62705b308096c31bf838dfc.setIcon(icon_2166bdea9b47b6a5ae16dcece5197bc2);
+        
+    
+        var popup_38d69957a3149890e47dea5f7e93ce4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2b8eb47d5f1c74c1c5ce7562a831087 = $(`<div id="html_a2b8eb47d5f1c74c1c5ce7562a831087" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Fairfax County, VA Crime Index: 0.0016</div>`)[0];
+                popup_38d69957a3149890e47dea5f7e93ce4e.setContent(html_a2b8eb47d5f1c74c1c5ce7562a831087);
+            
+        
+
+        marker_66aa51c2f62705b308096c31bf838dfc.bindPopup(popup_38d69957a3149890e47dea5f7e93ce4e)
+        ;
+
+        
+    
+    
+            var marker_243b733b58037125b877e8d3a2fa355d = L.marker(
+                [33.0357485, -97.32462503769055],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_68ba2c884d49bfdd77178da7d73458a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_243b733b58037125b877e8d3a2fa355d.setIcon(icon_68ba2c884d49bfdd77178da7d73458a5);
+        
+    
+        var popup_be9f08fd1743a95f726c67edbba71954 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1cbd633bf85377c6c82dca28648f9f9 = $(`<div id="html_c1cbd633bf85377c6c82dca28648f9f9" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Fort Worth, TX Crime Index: 0.0051</div>`)[0];
+                popup_be9f08fd1743a95f726c67edbba71954.setContent(html_c1cbd633bf85377c6c82dca28648f9f9);
+            
+        
+
+        marker_243b733b58037125b877e8d3a2fa355d.bindPopup(popup_be9f08fd1743a95f726c67edbba71954)
+        ;
+
+        
+    
+    
+            var marker_da613466a5a4970934783689c1c90664 = L.marker(
+                [36.7394421, -119.78483],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_b6326c7d2309dea49b451cc234b69873 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_da613466a5a4970934783689c1c90664.setIcon(icon_b6326c7d2309dea49b451cc234b69873);
+        
+    
+        var popup_6ebeaa7245bde8d066c284eda8d2e139 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3fbc07d0871a3c805a3fb205b6e5647 = $(`<div id="html_a3fbc07d0871a3c805a3fb205b6e5647" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Fresno, CA Crime Index: 0.0065</div>`)[0];
+                popup_6ebeaa7245bde8d066c284eda8d2e139.setContent(html_a3fbc07d0871a3c805a3fb205b6e5647);
+            
+        
+
+        marker_da613466a5a4970934783689c1c90664.bindPopup(popup_6ebeaa7245bde8d066c284eda8d2e139)
+        ;
+
+        
+    
+    
+            var marker_946112a101f4ba54930d0546216f86c7 = L.marker(
+                [21.304547, -157.855676],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_b49ccf36c86b8bf0c2d109108a881560 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_946112a101f4ba54930d0546216f86c7.setIcon(icon_b49ccf36c86b8bf0c2d109108a881560);
+        
+    
+        var popup_0c2b61974a936f74a584e5e4df36581e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f7cfb909fa620a03088a1d8ed712477 = $(`<div id="html_1f7cfb909fa620a03088a1d8ed712477" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Honolulu, HI Crime Index: 0.0023</div>`)[0];
+                popup_0c2b61974a936f74a584e5e4df36581e.setContent(html_1f7cfb909fa620a03088a1d8ed712477);
+            
+        
+
+        marker_946112a101f4ba54930d0546216f86c7.bindPopup(popup_0c2b61974a936f74a584e5e4df36581e)
+        ;
+
+        
+    
+    
+            var marker_d8d005bc803732abccf0c5bf73a168c9 = L.marker(
+                [29.7589382, -95.3676974],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_f1d8dee35072bc2ed2ca8266d01d68f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d8d005bc803732abccf0c5bf73a168c9.setIcon(icon_f1d8dee35072bc2ed2ca8266d01d68f3);
+        
+    
+        var popup_e7cd65bbe41a2cd8cd9a9e7dca744e97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_334627e981ef915286be3b103f5613ef = $(`<div id="html_334627e981ef915286be3b103f5613ef" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Houston, TX Crime Index: 0.0065</div>`)[0];
+                popup_e7cd65bbe41a2cd8cd9a9e7dca744e97.setContent(html_334627e981ef915286be3b103f5613ef);
+            
+        
+
+        marker_d8d005bc803732abccf0c5bf73a168c9.bindPopup(popup_e7cd65bbe41a2cd8cd9a9e7dca744e97)
+        ;
+
+        
+    
+    
+            var marker_8a3b661ce9aa898d145cfa43794d13f6 = L.marker(
+                [39.7683331, -86.1583502],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_3faa45004e99c33a2a9dff67d08b8a10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8a3b661ce9aa898d145cfa43794d13f6.setIcon(icon_3faa45004e99c33a2a9dff67d08b8a10);
+        
+    
+        var popup_8333cbc6f6d03ffb5ead34f31118a332 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03b2ee53a8b2cc56b2cec0b464886106 = $(`<div id="html_03b2ee53a8b2cc56b2cec0b464886106" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Indianapolis, IN Crime Index: 0.0092</div>`)[0];
+                popup_8333cbc6f6d03ffb5ead34f31118a332.setContent(html_03b2ee53a8b2cc56b2cec0b464886106);
+            
+        
+
+        marker_8a3b661ce9aa898d145cfa43794d13f6.bindPopup(popup_8333cbc6f6d03ffb5ead34f31118a332)
+        ;
+
+        
+    
+    
+            var marker_3f86e83a0f27348653713f329d72a896 = L.marker(
+                [30.3321838, -81.655651],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_6ce8a46179738398a7453aa05aa29c72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3f86e83a0f27348653713f329d72a896.setIcon(icon_6ce8a46179738398a7453aa05aa29c72);
+        
+    
+        var popup_f3caa021f5bae3a7abadf5ab09f3f269 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9899635d6d624c6b424c6d9b32827d3b = $(`<div id="html_9899635d6d624c6b424c6d9b32827d3b" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Jacksonville, FL Crime Index: 0.0084</div>`)[0];
+                popup_f3caa021f5bae3a7abadf5ab09f3f269.setContent(html_9899635d6d624c6b424c6d9b32827d3b);
+            
+        
+
+        marker_3f86e83a0f27348653713f329d72a896.bindPopup(popup_f3caa021f5bae3a7abadf5ab09f3f269)
+        ;
+
+        
+    
+    
+            var marker_f5a82ac14b140af7e7a09b53ee529b29 = L.marker(
+                [39.100105, -94.5781416],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_961e2815df3c6e1314c1dc8e85def101 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f5a82ac14b140af7e7a09b53ee529b29.setIcon(icon_961e2815df3c6e1314c1dc8e85def101);
+        
+    
+        var popup_3b62793099c1456cbfd1d69223bcce64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7951474cc3455ceb21fc3ec01d72308c = $(`<div id="html_7951474cc3455ceb21fc3ec01d72308c" style="width: 100.0%; height: 100.0%;">Average city: Kansas City, MO Crime Index: 0.0124</div>`)[0];
+                popup_3b62793099c1456cbfd1d69223bcce64.setContent(html_7951474cc3455ceb21fc3ec01d72308c);
+            
+        
+
+        marker_f5a82ac14b140af7e7a09b53ee529b29.bindPopup(popup_3b62793099c1456cbfd1d69223bcce64)
+        ;
+
+        
+    
+    
+            var marker_d17e60bb5df2a83a6249113efd825ed5 = L.marker(
+                [36.1672559, -115.148516],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_eeeda49a267933441108f37bfc0d09b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d17e60bb5df2a83a6249113efd825ed5.setIcon(icon_eeeda49a267933441108f37bfc0d09b3);
+        
+    
+        var popup_48ecd876ad336e0e072013ffd890689c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93d4179c574addd386ed8886228455d5 = $(`<div id="html_93d4179c574addd386ed8886228455d5" style="width: 100.0%; height: 100.0%;">Average city: Las Vegas, NV Crime Index: 0.0104</div>`)[0];
+                popup_48ecd876ad336e0e072013ffd890689c.setContent(html_93d4179c574addd386ed8886228455d5);
+            
+        
+
+        marker_d17e60bb5df2a83a6249113efd825ed5.bindPopup(popup_48ecd876ad336e0e072013ffd890689c)
+        ;
+
+        
+    
+    
+            var marker_dc0f292a87967c1e2dcd7accd64849ff = L.marker(
+                [33.7690164, -118.191604],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_bb06f5e927d18fc3a30db893d8b77677 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc0f292a87967c1e2dcd7accd64849ff.setIcon(icon_bb06f5e927d18fc3a30db893d8b77677);
+        
+    
+        var popup_265442e68aa56a5e967eaead4afd728e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d297512e62d6f0bcb27442d929c1298f = $(`<div id="html_d297512e62d6f0bcb27442d929c1298f" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Long Beach, CA Crime Index: 0.0094</div>`)[0];
+                popup_265442e68aa56a5e967eaead4afd728e.setContent(html_d297512e62d6f0bcb27442d929c1298f);
+            
+        
+
+        marker_dc0f292a87967c1e2dcd7accd64849ff.bindPopup(popup_265442e68aa56a5e967eaead4afd728e)
+        ;
+
+        
+    
+    
+            var marker_9b22eab421d43534e27633d90c7d8958 = L.marker(
+                [34.3155072, -118.209681],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_ff45404e10f33a4f3063931ab1dd3013 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b22eab421d43534e27633d90c7d8958.setIcon(icon_ff45404e10f33a4f3063931ab1dd3013);
+        
+    
+        var popup_c92ca33f9e7cdbca619da6345ce56c1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfe4d807d4a0bd81a3283a24891638db = $(`<div id="html_dfe4d807d4a0bd81a3283a24891638db" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Los Angeles County, CA Crime Index: 0.0096</div>`)[0];
+                popup_c92ca33f9e7cdbca619da6345ce56c1f.setContent(html_dfe4d807d4a0bd81a3283a24891638db);
+            
+        
+
+        marker_9b22eab421d43534e27633d90c7d8958.bindPopup(popup_c92ca33f9e7cdbca619da6345ce56c1f)
+        ;
+
+        
+    
+    
+            var marker_a55c5b16a45850a3758f4d06844f2dca = L.marker(
+                [34.0536909, -118.242766],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_f88de13ca8787fed6c7fe84c4095af7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a55c5b16a45850a3758f4d06844f2dca.setIcon(icon_f88de13ca8787fed6c7fe84c4095af7a);
+        
+    
+        var popup_85082764beb983264760d2a212c3633b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4110645388ec179c391b9da1fe475135 = $(`<div id="html_4110645388ec179c391b9da1fe475135" style="width: 100.0%; height: 100.0%;">Average city: Los Angeles, CA Crime Index: 0.0111</div>`)[0];
+                popup_85082764beb983264760d2a212c3633b.setContent(html_4110645388ec179c391b9da1fe475135);
+            
+        
+
+        marker_a55c5b16a45850a3758f4d06844f2dca.bindPopup(popup_85082764beb983264760d2a212c3633b)
+        ;
+
+        
+    
+    
+            var marker_0fc618e29d1ea3a16b2c0263e24c7dca = L.marker(
+                [35.1460249, -90.0517638],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_329970843e1e3a1243ee112eeb387b1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fc618e29d1ea3a16b2c0263e24c7dca.setIcon(icon_329970843e1e3a1243ee112eeb387b1f);
+        
+    
+        var popup_93c38cd5d977c893e4831cb64d8dffa5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac247551f9e7ee66092efb2f2ebfb6e2 = $(`<div id="html_ac247551f9e7ee66092efb2f2ebfb6e2" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Memphis, TN Crime Index: 0.0084</div>`)[0];
+                popup_93c38cd5d977c893e4831cb64d8dffa5.setContent(html_ac247551f9e7ee66092efb2f2ebfb6e2);
+            
+        
+
+        marker_0fc618e29d1ea3a16b2c0263e24c7dca.bindPopup(popup_93c38cd5d977c893e4831cb64d8dffa5)
+        ;
+
+        
+    
+    
+            var marker_cfbd38e6cde1f410356eb26c393199ea = L.marker(
+                [33.4151005, -111.831455],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_8c3c453d5ce938df6a8ac9872bdc6b30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cfbd38e6cde1f410356eb26c393199ea.setIcon(icon_8c3c453d5ce938df6a8ac9872bdc6b30);
+        
+    
+        var popup_54c5fce1fa1fb55ee378771505816d4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e803b2b60b7f8f9eecf95c9beeda0699 = $(`<div id="html_e803b2b60b7f8f9eecf95c9beeda0699" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Mesa, AZ Crime Index: 0.0024</div>`)[0];
+                popup_54c5fce1fa1fb55ee378771505816d4a.setContent(html_e803b2b60b7f8f9eecf95c9beeda0699);
+            
+        
+
+        marker_cfbd38e6cde1f410356eb26c393199ea.bindPopup(popup_54c5fce1fa1fb55ee378771505816d4a)
+        ;
+
+        
+    
+    
+            var marker_40500f57b77098bac0fc16ec39150cdb = L.marker(
+                [25.6364246, -80.4989467],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_f667b59cd3879075712dc8e2aa05951c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_40500f57b77098bac0fc16ec39150cdb.setIcon(icon_f667b59cd3879075712dc8e2aa05951c);
+        
+    
+        var popup_735a5e96e13a85433f3424529fcfcb32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6282447d38a4be9204adc443aacc6e53 = $(`<div id="html_6282447d38a4be9204adc443aacc6e53" style="width: 100.0%; height: 100.0%;">Average city: Miami-Dade County, FL Crime Index: 0.0108</div>`)[0];
+                popup_735a5e96e13a85433f3424529fcfcb32.setContent(html_6282447d38a4be9204adc443aacc6e53);
+            
+        
+
+        marker_40500f57b77098bac0fc16ec39150cdb.bindPopup(popup_735a5e96e13a85433f3424529fcfcb32)
+        ;
+
+        
+    
+    
+            var marker_916faeeb725dc2609c15fd6204fea960 = L.marker(
+                [25.7741728, -80.19362],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_462faf98319fc29fc2b05af07bf891b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_916faeeb725dc2609c15fd6204fea960.setIcon(icon_462faf98319fc29fc2b05af07bf891b3);
+        
+    
+        var popup_bfb54c4d370cdc744a2b3ecdbf956e12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_364825f8f2e2294800d3d5a64842539e = $(`<div id="html_364825f8f2e2294800d3d5a64842539e" style="width: 100.0%; height: 100.0%;">Average city: Miami, FL Crime Index: 0.0177</div>`)[0];
+                popup_bfb54c4d370cdc744a2b3ecdbf956e12.setContent(html_364825f8f2e2294800d3d5a64842539e);
+            
+        
+
+        marker_916faeeb725dc2609c15fd6204fea960.bindPopup(popup_bfb54c4d370cdc744a2b3ecdbf956e12)
+        ;
+
+        
+    
+    
+            var marker_6f07a8a440ce9c682720ea4d0bbfc778 = L.marker(
+                [43.0386475, -87.9090751],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_51acffe03fe5035f9c8bfb3f4a36cb00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f07a8a440ce9c682720ea4d0bbfc778.setIcon(icon_51acffe03fe5035f9c8bfb3f4a36cb00);
+        
+    
+        var popup_f01a4aede6cd0fd7eb3677d13415c774 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40318c77a8d63cb0e570de0a445b9d24 = $(`<div id="html_40318c77a8d63cb0e570de0a445b9d24" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Milwaukee, WI Crime Index: 0.0048</div>`)[0];
+                popup_f01a4aede6cd0fd7eb3677d13415c774.setContent(html_40318c77a8d63cb0e570de0a445b9d24);
+            
+        
+
+        marker_6f07a8a440ce9c682720ea4d0bbfc778.bindPopup(popup_f01a4aede6cd0fd7eb3677d13415c774)
+        ;
+
+        
+    
+    
+            var marker_44ca6ba36ffca19a095148596658853a = L.marker(
+                [44.9772995, -93.2654692],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_57b97d4f3363e9c682280a6c79a3d7a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44ca6ba36ffca19a095148596658853a.setIcon(icon_57b97d4f3363e9c682280a6c79a3d7a7);
+        
+    
+        var popup_35a2fcd1326e965d5366017b6eede6de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25f2242313b99868035e4c8bea00efaa = $(`<div id="html_25f2242313b99868035e4c8bea00efaa" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Minneapolis, MN Crime Index: 0.0082</div>`)[0];
+                popup_35a2fcd1326e965d5366017b6eede6de.setContent(html_25f2242313b99868035e4c8bea00efaa);
+            
+        
+
+        marker_44ca6ba36ffca19a095148596658853a.bindPopup(popup_35a2fcd1326e965d5366017b6eede6de)
+        ;
+
+        
+    
+    
+            var marker_5dd5e3242b40bfdfce7836c72c10d65e = L.marker(
+                [39.1406267, -77.2075612],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_d4d4faa936168073c30492787b9a3283 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5dd5e3242b40bfdfce7836c72c10d65e.setIcon(icon_d4d4faa936168073c30492787b9a3283);
+        
+    
+        var popup_8db1339c03b81d341026dcc2a6d73046 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65091e131e2781c131bcd75c14fbef77 = $(`<div id="html_65091e131e2781c131bcd75c14fbef77" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Montgomery County, MD Crime Index: 0.0019</div>`)[0];
+                popup_8db1339c03b81d341026dcc2a6d73046.setContent(html_65091e131e2781c131bcd75c14fbef77);
+            
+        
+
+        marker_5dd5e3242b40bfdfce7836c72c10d65e.bindPopup(popup_8db1339c03b81d341026dcc2a6d73046)
+        ;
+
+        
+    
+    
+            var marker_f004725f14121e3da8bf63bcd4f290a1 = L.marker(
+                [36.1622767, -86.7742984],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_ac6dd22e235d0fa9a647d8642f8a14e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f004725f14121e3da8bf63bcd4f290a1.setIcon(icon_ac6dd22e235d0fa9a647d8642f8a14e0);
+        
+    
+        var popup_2bf837d7b48a2d3ee0f76f7c1ea75b6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7827270deee02a8afa5909f9371e935f = $(`<div id="html_7827270deee02a8afa5909f9371e935f" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Nashville, TN Crime Index: 0.0070</div>`)[0];
+                popup_2bf837d7b48a2d3ee0f76f7c1ea75b6c.setContent(html_7827270deee02a8afa5909f9371e935f);
+            
+        
+
+        marker_f004725f14121e3da8bf63bcd4f290a1.bindPopup(popup_2bf837d7b48a2d3ee0f76f7c1ea75b6c)
+        ;
+
+        
+    
+    
+            var marker_0ab4cc72973c17e1b7d863c5c5d05a19 = L.marker(
+                [40.7352994, -73.5615778],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_86cd3aead4e65ed3744160182fe1591b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0ab4cc72973c17e1b7d863c5c5d05a19.setIcon(icon_86cd3aead4e65ed3744160182fe1591b);
+        
+    
+        var popup_b1aa60d6152567402186292464b0b05e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e65ebb1b86b1ebdad07f31513201425 = $(`<div id="html_6e65ebb1b86b1ebdad07f31513201425" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Nassau County, NY Crime Index: 0.0009</div>`)[0];
+                popup_b1aa60d6152567402186292464b0b05e.setContent(html_6e65ebb1b86b1ebdad07f31513201425);
+            
+        
+
+        marker_0ab4cc72973c17e1b7d863c5c5d05a19.bindPopup(popup_b1aa60d6152567402186292464b0b05e)
+        ;
+
+        
+    
+    
+            var marker_e29ee1e50e32d47da0e812eec50f9a8e = L.marker(
+                [29.9759983, -90.0782127],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_9b4af9f7fed442fe9e45248afccc2be9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e29ee1e50e32d47da0e812eec50f9a8e.setIcon(icon_9b4af9f7fed442fe9e45248afccc2be9);
+        
+    
+        var popup_6f814a59b361cda6f48872411be5f9f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8ae5ec5ef6b087107c4c9eb0245b03b = $(`<div id="html_b8ae5ec5ef6b087107c4c9eb0245b03b" style="width: 100.0%; height: 100.0%;">Average city: New Orleans, LA Crime Index: 0.0105</div>`)[0];
+                popup_6f814a59b361cda6f48872411be5f9f6.setContent(html_b8ae5ec5ef6b087107c4c9eb0245b03b);
+            
+        
+
+        marker_e29ee1e50e32d47da0e812eec50f9a8e.bindPopup(popup_6f814a59b361cda6f48872411be5f9f6)
+        ;
+
+        
+    
+    
+            var marker_9e1cc0f338b792d3a8e58c0a7e4dc51f = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_26a819d0456aec6dbdfd4fef2d8eb4bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9e1cc0f338b792d3a8e58c0a7e4dc51f.setIcon(icon_26a819d0456aec6dbdfd4fef2d8eb4bd);
+        
+    
+        var popup_4620216e4aca7e01f23ddf7e4ceb5daa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a0536570fa689a70ea8a026d910445f = $(`<div id="html_2a0536570fa689a70ea8a026d910445f" style="width: 100.0%; height: 100.0%;">Average city: New York City, NY Crime Index: 0.0178</div>`)[0];
+                popup_4620216e4aca7e01f23ddf7e4ceb5daa.setContent(html_2a0536570fa689a70ea8a026d910445f);
+            
+        
+
+        marker_9e1cc0f338b792d3a8e58c0a7e4dc51f.bindPopup(popup_4620216e4aca7e01f23ddf7e4ceb5daa)
+        ;
+
+        
+    
+    
+            var marker_440b997a82fccfc2a7ee3544ef965d27 = L.marker(
+                [40.735657, -74.1723667],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_24f8d69b196b6544adc1808dee9ab6ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_440b997a82fccfc2a7ee3544ef965d27.setIcon(icon_24f8d69b196b6544adc1808dee9ab6ec);
+        
+    
+        var popup_0501d3634dd6ff405691ad16b1ac67d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a25c84d4fa21bbf040faf77cc3d27263 = $(`<div id="html_a25c84d4fa21bbf040faf77cc3d27263" style="width: 100.0%; height: 100.0%;">Average city: Newark, NJ Crime Index: 0.0191</div>`)[0];
+                popup_0501d3634dd6ff405691ad16b1ac67d4.setContent(html_a25c84d4fa21bbf040faf77cc3d27263);
+            
+        
+
+        marker_440b997a82fccfc2a7ee3544ef965d27.bindPopup(popup_0501d3634dd6ff405691ad16b1ac67d4)
+        ;
+
+        
+    
+    
+            var marker_e455d4beb0920852cd011f97109e5f5f = L.marker(
+                [37.8044557, -122.271356],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_b5a09eb39257055d799784004534c021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e455d4beb0920852cd011f97109e5f5f.setIcon(icon_b5a09eb39257055d799784004534c021);
+        
+    
+        var popup_54eb4888dda861508b1f3e6ec7898212 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_207b82c52a7d33c0fb74ab7d00b6400c = $(`<div id="html_207b82c52a7d33c0fb74ab7d00b6400c" style="width: 100.0%; height: 100.0%;">Average city: Oakland, CA Crime Index: 0.0175</div>`)[0];
+                popup_54eb4888dda861508b1f3e6ec7898212.setContent(html_207b82c52a7d33c0fb74ab7d00b6400c);
+            
+        
+
+        marker_e455d4beb0920852cd011f97109e5f5f.bindPopup(popup_54eb4888dda861508b1f3e6ec7898212)
+        ;
+
+        
+    
+    
+            var marker_3922d01dce2b3d20f7f89b988a33a9a6 = L.marker(
+                [35.4729886, -97.5170536],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_c0fc9fe263ba4394b06d5f0a64be6a9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3922d01dce2b3d20f7f89b988a33a9a6.setIcon(icon_c0fc9fe263ba4394b06d5f0a64be6a9f);
+        
+    
+        var popup_16749c0beda71251a8986cd9c013b880 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c209cb289b8c712505fd0033a66ce24e = $(`<div id="html_c209cb289b8c712505fd0033a66ce24e" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Oklahoma City, OK Crime Index: 0.0069</div>`)[0];
+                popup_16749c0beda71251a8986cd9c013b880.setContent(html_c209cb289b8c712505fd0033a66ce24e);
+            
+        
+
+        marker_3922d01dce2b3d20f7f89b988a33a9a6.bindPopup(popup_16749c0beda71251a8986cd9c013b880)
+        ;
+
+        
+    
+    
+            var marker_53905dc7ab573b81a678452cea4f6256 = L.marker(
+                [41.2587459, -95.9383758],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_97b33707a14841808051e01dd9a754c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53905dc7ab573b81a678452cea4f6256.setIcon(icon_97b33707a14841808051e01dd9a754c6);
+        
+    
+        var popup_abcf90fe41fa7dc91b9924efa15003e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a2e5489b955cee78fae477132ae0c1e = $(`<div id="html_1a2e5489b955cee78fae477132ae0c1e" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Omaha, NE Crime Index: 0.0065</div>`)[0];
+                popup_abcf90fe41fa7dc91b9924efa15003e2.setContent(html_1a2e5489b955cee78fae477132ae0c1e);
+            
+        
+
+        marker_53905dc7ab573b81a678452cea4f6256.bindPopup(popup_abcf90fe41fa7dc91b9924efa15003e2)
+        ;
+
+        
+    
+    
+            var marker_ef213e64a5bcad455b4c6558d2970846 = L.marker(
+                [28.5421109, -81.3790304],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_1a6eec7b77c60fe3d303638078adf41e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef213e64a5bcad455b4c6558d2970846.setIcon(icon_1a6eec7b77c60fe3d303638078adf41e);
+        
+    
+        var popup_a0b2e9513c4e2f94c46b0c8631b6fbe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4145dc03e52ef5f9325bdf4b94cc8edd = $(`<div id="html_4145dc03e52ef5f9325bdf4b94cc8edd" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Orlando, FL Crime Index: 0.0094</div>`)[0];
+                popup_a0b2e9513c4e2f94c46b0c8631b6fbe0.setContent(html_4145dc03e52ef5f9325bdf4b94cc8edd);
+            
+        
+
+        marker_ef213e64a5bcad455b4c6558d2970846.bindPopup(popup_a0b2e9513c4e2f94c46b0c8631b6fbe0)
+        ;
+
+        
+    
+    
+            var marker_72f6f773fd7ffe6bfe991c5eb47cf009 = L.marker(
+                [39.9527237, -75.1635262],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_16ddce3c09c1dc83d6976206ac9c4e89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_72f6f773fd7ffe6bfe991c5eb47cf009.setIcon(icon_16ddce3c09c1dc83d6976206ac9c4e89);
+        
+    
+        var popup_9bb94d634a5b2254a63c3a16f536040e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57fba3b041a2ddba4d787bc4cbc02873 = $(`<div id="html_57fba3b041a2ddba4d787bc4cbc02873" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Philadelphia, PA Crime Index: 0.0087</div>`)[0];
+                popup_9bb94d634a5b2254a63c3a16f536040e.setContent(html_57fba3b041a2ddba4d787bc4cbc02873);
+            
+        
+
+        marker_72f6f773fd7ffe6bfe991c5eb47cf009.bindPopup(popup_9bb94d634a5b2254a63c3a16f536040e)
+        ;
+
+        
+    
+    
+            var marker_aece00880b9e824cb775d9886e2f0643 = L.marker(
+                [33.4484367, -112.074141],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_05f333f7597d17ec2e1bf53751f57a43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aece00880b9e824cb775d9886e2f0643.setIcon(icon_05f333f7597d17ec2e1bf53751f57a43);
+        
+    
+        var popup_d90fa8b30df3fde1b4693fb92582d602 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0619d3d4a6ab6cea98b85f623b272013 = $(`<div id="html_0619d3d4a6ab6cea98b85f623b272013" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Phoenix, AZ Crime Index: 0.0070</div>`)[0];
+                popup_d90fa8b30df3fde1b4693fb92582d602.setContent(html_0619d3d4a6ab6cea98b85f623b272013);
+            
+        
+
+        marker_aece00880b9e824cb775d9886e2f0643.bindPopup(popup_d90fa8b30df3fde1b4693fb92582d602)
+        ;
+
+        
+    
+    
+            var marker_f16457b0aab62e084f39fdb0995bd6c3 = L.marker(
+                [40.4416941, -79.9900861],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_626061ad528bb73aaa1a4d35b1f2ff4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f16457b0aab62e084f39fdb0995bd6c3.setIcon(icon_626061ad528bb73aaa1a4d35b1f2ff4b);
+        
+    
+        var popup_cacedacf6b1d8f4cecbe98e8111ad8cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb50782a6d5bbfa428d46853946cf1a9 = $(`<div id="html_fb50782a6d5bbfa428d46853946cf1a9" style="width: 100.0%; height: 100.0%;">Average city: Pittsburgh, PA Crime Index: 0.0104</div>`)[0];
+                popup_cacedacf6b1d8f4cecbe98e8111ad8cd.setContent(html_fb50782a6d5bbfa428d46853946cf1a9);
+            
+        
+
+        marker_f16457b0aab62e084f39fdb0995bd6c3.bindPopup(popup_cacedacf6b1d8f4cecbe98e8111ad8cd)
+        ;
+
+        
+    
+    
+            var marker_c08ed371a6a2ae069ae8429a6b1033dc = L.marker(
+                [45.5202471, -122.674194],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_47b96dcc4cf876649a3f3bd05ef96d6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c08ed371a6a2ae069ae8429a6b1033dc.setIcon(icon_47b96dcc4cf876649a3f3bd05ef96d6a);
+        
+    
+        var popup_7ec471a1536a34b350bf50789cfc62fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_913e11c9aa55cbb3181de34879b4c061 = $(`<div id="html_913e11c9aa55cbb3181de34879b4c061" style="width: 100.0%; height: 100.0%;">Average city: Portland, OR Crime Index: 0.0109</div>`)[0];
+                popup_7ec471a1536a34b350bf50789cfc62fa.setContent(html_913e11c9aa55cbb3181de34879b4c061);
+            
+        
+
+        marker_c08ed371a6a2ae069ae8429a6b1033dc.bindPopup(popup_7ec471a1536a34b350bf50789cfc62fa)
+        ;
+
+        
+    
+    
+            var marker_1244782afeaf9b5254ce5577ec475a3b = L.marker(
+                [38.803929, -76.8518695],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_853ccc804f0b2662fb7f234d567497bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1244782afeaf9b5254ce5577ec475a3b.setIcon(icon_853ccc804f0b2662fb7f234d567497bd);
+        
+    
+        var popup_5433fa4a2dde69dc23b1ae3482a2c900 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9345d7014112f79dba9edb5e26ca9a9f = $(`<div id="html_9345d7014112f79dba9edb5e26ca9a9f" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Prince George's County, MD Crime Index: 0.0073</div>`)[0];
+                popup_5433fa4a2dde69dc23b1ae3482a2c900.setContent(html_9345d7014112f79dba9edb5e26ca9a9f);
+            
+        
+
+        marker_1244782afeaf9b5254ce5577ec475a3b.bindPopup(popup_5433fa4a2dde69dc23b1ae3482a2c900)
+        ;
+
+        
+    
+    
+            var marker_ae0db84c53ad41bdeafca38aabed9a69 = L.marker(
+                [35.7803977, -78.6390989],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_da0862090b7dd514937c252470cab1f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae0db84c53ad41bdeafca38aabed9a69.setIcon(icon_da0862090b7dd514937c252470cab1f1);
+        
+    
+        var popup_25678501398006416cd1e77d18a12f9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db5d8f7c1062cfad37fc56529bbd01c5 = $(`<div id="html_db5d8f7c1062cfad37fc56529bbd01c5" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Raleigh, NC Crime Index: 0.0048</div>`)[0];
+                popup_25678501398006416cd1e77d18a12f9c.setContent(html_db5d8f7c1062cfad37fc56529bbd01c5);
+            
+        
+
+        marker_ae0db84c53ad41bdeafca38aabed9a69.bindPopup(popup_25678501398006416cd1e77d18a12f9c)
+        ;
+
+        
+    
+    
+            var marker_722dfdad0abfc2f8941d0aac3a60b7be = L.marker(
+                [38.5810606, -121.493895],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_ebdf1c2fb427ced2d5c09b54ed906722 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_722dfdad0abfc2f8941d0aac3a60b7be.setIcon(icon_ebdf1c2fb427ced2d5c09b54ed906722);
+        
+    
+        var popup_b7209cfba078f79481665a172f79b7c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6040297c5ebda2725ab612199669039 = $(`<div id="html_e6040297c5ebda2725ab612199669039" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Sacramento, CA Crime Index: 0.0092</div>`)[0];
+                popup_b7209cfba078f79481665a172f79b7c3.setContent(html_e6040297c5ebda2725ab612199669039);
+            
+        
+
+        marker_722dfdad0abfc2f8941d0aac3a60b7be.bindPopup(popup_b7209cfba078f79481665a172f79b7c3)
+        ;
+
+        
+    
+    
+            var marker_3e9f4fa49498066d67f24744d12fd015 = L.marker(
+                [40.7596198, -111.886797],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_5a34b9c26ecdb93bf825dca1e5f92c28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e9f4fa49498066d67f24744d12fd015.setIcon(icon_5a34b9c26ecdb93bf825dca1e5f92c28);
+        
+    
+        var popup_d5b852731e482a78fe35f0b3cd672488 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f45aae904342fa3921a75817b339c096 = $(`<div id="html_f45aae904342fa3921a75817b339c096" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Salt Lake City, UT Crime Index: 0.0059</div>`)[0];
+                popup_d5b852731e482a78fe35f0b3cd672488.setContent(html_f45aae904342fa3921a75817b339c096);
+            
+        
+
+        marker_3e9f4fa49498066d67f24744d12fd015.bindPopup(popup_d5b852731e482a78fe35f0b3cd672488)
+        ;
+
+        
+    
+    
+            var marker_81d0b6ccc1c10573debbc37515e8afad = L.marker(
+                [29.3067354, -98.60465674366606],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_468604523a18f6e63911575d97639f9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81d0b6ccc1c10573debbc37515e8afad.setIcon(icon_468604523a18f6e63911575d97639f9c);
+        
+    
+        var popup_850dd673089259ece9e65475027456c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f05e049427b3e39bb3a651826c289fc = $(`<div id="html_7f05e049427b3e39bb3a651826c289fc" style="width: 100.0%; height: 100.0%;">Best city to raise a family: San Antonio, TX Crime Index: 0.0055</div>`)[0];
+                popup_850dd673089259ece9e65475027456c0.setContent(html_7f05e049427b3e39bb3a651826c289fc);
+            
+        
+
+        marker_81d0b6ccc1c10573debbc37515e8afad.bindPopup(popup_850dd673089259ece9e65475027456c0)
+        ;
+
+        
+    
+    
+            var marker_e160a86b2e7e1b36d9dc521b124fcc10 = L.marker(
+                [32.7174202, -117.162772],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_867669d65487f55d06bdc9bb3a07d811 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e160a86b2e7e1b36d9dc521b124fcc10.setIcon(icon_867669d65487f55d06bdc9bb3a07d811);
+        
+    
+        var popup_25344509e766201205e14b1aa043daa5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b37f3a93d0b458635d318a5e8b8acb3 = $(`<div id="html_9b37f3a93d0b458635d318a5e8b8acb3" style="width: 100.0%; height: 100.0%;">Best city to raise a family: San Diego, CA Crime Index: 0.0050</div>`)[0];
+                popup_25344509e766201205e14b1aa043daa5.setContent(html_9b37f3a93d0b458635d318a5e8b8acb3);
+            
+        
+
+        marker_e160a86b2e7e1b36d9dc521b124fcc10.bindPopup(popup_25344509e766201205e14b1aa043daa5)
+        ;
+
+        
+    
+    
+            var marker_9709022d5eca2a82b2c40e8153405ce9 = L.marker(
+                [37.7792588, -122.4193286],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_09e2e14653ab4268a90b0b81e211c6ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9709022d5eca2a82b2c40e8153405ce9.setIcon(icon_09e2e14653ab4268a90b0b81e211c6ce);
+        
+    
+        var popup_0fea658c4b834de898d472e01ddb27f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c279741c598819b4daeb71913f3b2ec = $(`<div id="html_0c279741c598819b4daeb71913f3b2ec" style="width: 100.0%; height: 100.0%;">Average city: San Francisco, CA Crime Index: 0.0136</div>`)[0];
+                popup_0fea658c4b834de898d472e01ddb27f9.setContent(html_0c279741c598819b4daeb71913f3b2ec);
+            
+        
+
+        marker_9709022d5eca2a82b2c40e8153405ce9.bindPopup(popup_0fea658c4b834de898d472e01ddb27f9)
+        ;
+
+        
+    
+    
+            var marker_e68e93a822846780d357c75d2b20977f = L.marker(
+                [37.3361663, -121.890591],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_41c1eb93329c542def13a7bf92a33a8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e68e93a822846780d357c75d2b20977f.setIcon(icon_41c1eb93329c542def13a7bf92a33a8f);
+        
+    
+        var popup_8d87bbc2fbb9bd1e31d6ad46c8dbfd83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ce7d9aa651fddcc85479b18d0db317c = $(`<div id="html_3ce7d9aa651fddcc85479b18d0db317c" style="width: 100.0%; height: 100.0%;">Best city to raise a family: San Jose, CA Crime Index: 0.0039</div>`)[0];
+                popup_8d87bbc2fbb9bd1e31d6ad46c8dbfd83.setContent(html_3ce7d9aa651fddcc85479b18d0db317c);
+            
+        
+
+        marker_e68e93a822846780d357c75d2b20977f.bindPopup(popup_8d87bbc2fbb9bd1e31d6ad46c8dbfd83)
+        ;
+
+        
+    
+    
+            var marker_ab34eda3f4caf24d9a4cf4a18762dadc = L.marker(
+                [47.6038321, -122.330062],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_65f8740da4921ff4035921e23ac9931c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab34eda3f4caf24d9a4cf4a18762dadc.setIcon(icon_65f8740da4921ff4035921e23ac9931c);
+        
+    
+        var popup_4613aa86fbc1eb4423717c1b8d503c82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c025be98c6c2e58cf57eba3ba418da8 = $(`<div id="html_0c025be98c6c2e58cf57eba3ba418da8" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Seattle, WA Crime Index: 0.0079</div>`)[0];
+                popup_4613aa86fbc1eb4423717c1b8d503c82.setContent(html_0c025be98c6c2e58cf57eba3ba418da8);
+            
+        
+
+        marker_ab34eda3f4caf24d9a4cf4a18762dadc.bindPopup(popup_4613aa86fbc1eb4423717c1b8d503c82)
+        ;
+
+        
+    
+    
+            var marker_3f7acc6e624b010f8e90850749850a8b = L.marker(
+                [38.6280278, -90.1910154],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_67791feb3c5c098db2f647e734781db6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3f7acc6e624b010f8e90850749850a8b.setIcon(icon_67791feb3c5c098db2f647e734781db6);
+        
+    
+        var popup_ad8aa860cc631881ae267d6ca2384d10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b487520b2273189329cf2cf68adeabba = $(`<div id="html_b487520b2273189329cf2cf68adeabba" style="width: 100.0%; height: 100.0%;">Average city: St. Louis, MO Crime Index: 0.0186</div>`)[0];
+                popup_ad8aa860cc631881ae267d6ca2384d10.setContent(html_b487520b2273189329cf2cf68adeabba);
+            
+        
+
+        marker_3f7acc6e624b010f8e90850749850a8b.bindPopup(popup_ad8aa860cc631881ae267d6ca2384d10)
+        ;
+
+        
+    
+    
+            var marker_5abc4e80dbef4e12503590aecc0006eb = L.marker(
+                [40.8832318, -72.8578027],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_6725ffdb8938f8b95ceb51bb6d476ea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5abc4e80dbef4e12503590aecc0006eb.setIcon(icon_6725ffdb8938f8b95ceb51bb6d476ea2);
+        
+    
+        var popup_7d80ae9f14347850690237cf103c243c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04a6fd5ee80d84f1178ddf6d3bcfc03c = $(`<div id="html_04a6fd5ee80d84f1178ddf6d3bcfc03c" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Suffolk County, NY Crime Index: 0.0008</div>`)[0];
+                popup_7d80ae9f14347850690237cf103c243c.setContent(html_04a6fd5ee80d84f1178ddf6d3bcfc03c);
+            
+        
+
+        marker_5abc4e80dbef4e12503590aecc0006eb.bindPopup(popup_7d80ae9f14347850690237cf103c243c)
+        ;
+
+        
+    
+    
+            var marker_8d5e431d11fa089f92c37d7d8c342d79 = L.marker(
+                [27.9477595, -82.458444],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_78b711e58bf65b8c96ba82a3f299598c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8d5e431d11fa089f92c37d7d8c342d79.setIcon(icon_78b711e58bf65b8c96ba82a3f299598c);
+        
+    
+        var popup_2cad37119d2b6c0b904ee9e887ac0cff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b58bdd2bc66637203cc394c8c1cfbf2f = $(`<div id="html_b58bdd2bc66637203cc394c8c1cfbf2f" style="width: 100.0%; height: 100.0%;">Average city: Tampa, FL Crime Index: 0.0109</div>`)[0];
+                popup_2cad37119d2b6c0b904ee9e887ac0cff.setContent(html_b58bdd2bc66637203cc394c8c1cfbf2f);
+            
+        
+
+        marker_8d5e431d11fa089f92c37d7d8c342d79.bindPopup(popup_2cad37119d2b6c0b904ee9e887ac0cff)
+        ;
+
+        
+    
+    
+            var marker_44e9e7bf1ceaf5ac697a9d6676b2a362 = L.marker(
+                [32.2228765, -110.974847],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_1bb8c17579ead9ad8cdf20d558295147 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44e9e7bf1ceaf5ac697a9d6676b2a362.setIcon(icon_1bb8c17579ead9ad8cdf20d558295147);
+        
+    
+        var popup_4663c84c6672f8996e0048ef47527272 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0f683ed388dca0bf75e96400c132350 = $(`<div id="html_a0f683ed388dca0bf75e96400c132350" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Tucson, AZ Crime Index: 0.0053</div>`)[0];
+                popup_4663c84c6672f8996e0048ef47527272.setContent(html_a0f683ed388dca0bf75e96400c132350);
+            
+        
+
+        marker_44e9e7bf1ceaf5ac697a9d6676b2a362.bindPopup(popup_4663c84c6672f8996e0048ef47527272)
+        ;
+
+        
+    
+    
+            var marker_fcea593725e58adbbe5aa98786375280 = L.marker(
+                [36.1563122, -95.9927516],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_df9f190ca0670f39e04bfe3d0151a392 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fcea593725e58adbbe5aa98786375280.setIcon(icon_df9f190ca0670f39e04bfe3d0151a392);
+        
+    
+        var popup_e55c68ead7e43d1993351ed9c5ecda7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b802ba340c716a408e0c5f621a4b46e = $(`<div id="html_5b802ba340c716a408e0c5f621a4b46e" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Tulsa, OK Crime Index: 0.0051</div>`)[0];
+                popup_e55c68ead7e43d1993351ed9c5ecda7d.setContent(html_5b802ba340c716a408e0c5f621a4b46e);
+            
+        
+
+        marker_fcea593725e58adbbe5aa98786375280.bindPopup(popup_e55c68ead7e43d1993351ed9c5ecda7d)
+        ;
+
+        
+    
+    
+            var marker_a0223b72a2705b3dff76f9b96e0791fb = L.marker(
+                [36.8496579, -75.9760751],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_68ee9975b3c6641e67bfa6440be3f9dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0223b72a2705b3dff76f9b96e0791fb.setIcon(icon_68ee9975b3c6641e67bfa6440be3f9dd);
+        
+    
+        var popup_d3ac8e1e0621292cf002e1cb1bb532af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d2ed20d8398d92f748b488eabe1dc9c = $(`<div id="html_5d2ed20d8398d92f748b488eabe1dc9c" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Virginia Beach, VA Crime Index: 0.0021</div>`)[0];
+                popup_d3ac8e1e0621292cf002e1cb1bb532af.setContent(html_5d2ed20d8398d92f748b488eabe1dc9c);
+            
+        
+
+        marker_a0223b72a2705b3dff76f9b96e0791fb.bindPopup(popup_d3ac8e1e0621292cf002e1cb1bb532af)
+        ;
+
+        
+    
+    
+            var marker_c12ef148a074b66c6bfd94687a328136 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_5127e81315c4b99c0c64183af855bd0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c12ef148a074b66c6bfd94687a328136.setIcon(icon_5127e81315c4b99c0c64183af855bd0e);
+        
+    
+        var popup_689e8a0debe7187d4041b563d35678a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62d8f4b484f796a0418115f1a079f54d = $(`<div id="html_62d8f4b484f796a0418115f1a079f54d" style="width: 100.0%; height: 100.0%;">Average city: Washington, DC Crime Index: 0.0177</div>`)[0];
+                popup_689e8a0debe7187d4041b563d35678a5.setContent(html_62d8f4b484f796a0418115f1a079f54d);
+            
+        
+
+        marker_c12ef148a074b66c6bfd94687a328136.bindPopup(popup_689e8a0debe7187d4041b563d35678a5)
+        ;
+
+        
+    
+    
+            var marker_0a57be1f34ecc462b782c4ef58b76676 = L.marker(
+                [37.6922361, -97.3375448],
+                {}
+            ).addTo(marker_cluster_098abe7bb7e6a40a11e19257183d6adc);
+        
+    
+            var icon_6f57a75af439e0faeb72b6308081f36a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a57be1f34ecc462b782c4ef58b76676.setIcon(icon_6f57a75af439e0faeb72b6308081f36a);
+        
+    
+        var popup_6b626cf449b7707441363bc1b49dd37f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de7743cc01a3317ecf846f46c90a04fd = $(`<div id="html_de7743cc01a3317ecf846f46c90a04fd" style="width: 100.0%; height: 100.0%;">Best city to raise a family: Wichita, KS Crime Index: 0.0044</div>`)[0];
+                popup_6b626cf449b7707441363bc1b49dd37f.setContent(html_de7743cc01a3317ecf846f46c90a04fd);
+            
+        
+
+        marker_0a57be1f34ecc462b782c4ef58b76676.bindPopup(popup_6b626cf449b7707441363bc1b49dd37f)
+        ;
+
+        
+    
+    
+            marker_cluster_098abe7bb7e6a40a11e19257183d6adc.addTo(map_609011cf88016e9a806bf4bbabdbf381);
+        
+</script>
+</html>
