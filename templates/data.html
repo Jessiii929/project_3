@@ -3,34 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Data Overview</title>
+    <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
     <header>
-        <h1>Data Overview</h1>
+        <h1>Crime Data Overview</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="data.html">Data</a></li>
-                <li><a href="visualizations.html">Visualizations</a></li>
+                <li><a href="{{ url_for('prop1') }}">Home</a></li>
+                <li><a href="{{ url_for('prop2') }}">Data</a></li>
+                <li><a href="{{ url_for('prop3') }}">Visualizations</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Data Process -->
         <section>
-            <h2>ANOTHER Overview</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id debitis, cupiditate quidem fugiat ut iste quasi nulla inventore doloribus, blanditiis repellendus aut. Nisi exercitationem possimus laboriosam tenetur ea ipsa?</p>
+            <h2>ETL Process</h2>
+            <p>Our group followed the ETL (Extract, Transform, Load) process to manage the crime data. We began by extracting raw crime data from a CSV file containing crime statistics across cities. Next, we used Python and the Pandas library for data transformation, cleaning, and manipulation. This included removing duplicates, handling missing values, and ensuring data consistency. Finally, the transformed data was loaded into a PostgreSQL database, which allowed for structured storage and efficient querying, enabling deeper analysis of crime trends and patterns.</p>
         </section>
+
+        <!-- Data Sources -->
         <section>
             <h2>Data Sources</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur ab in hic ducimus, eveniet quidem sit totam voluptas. Maiores, voluptatibus! Non, iste. Asperiores autem numquam nemo hic cumque porro.</p>
+            <p>The crime data for this project was initially sourced from Kaggle.com, where we obtained a CSV file containing detailed crime statistics. Ultimately, the data originates from the FBI's Uniform Crime Reporting (UCR) program, specifically the "Offenses Known and Clearances by Arrest" database. Maintained by the National Archives of Criminal Justice Data, this dataset offers a comprehensive overview of crime trends across various cities, providing valuable insights for analysis.</p>
+        </section>
+
+        <!-- Insights -->
+        <section>
+            <h2>Key Insights</h2>
+            <p>Based on the analysis of the dataset, several key insights were drawn:</p>
+            <ul>
+            </ul>
+            <p>BLANK</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Your Website</p>
     </footer>
-</body>
 </html>
