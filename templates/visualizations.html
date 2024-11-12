@@ -4,42 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizations</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
 </head>
+
+
 <body>
     <header>
-        <h1>Data Visualizations</h1>
+        <h1>Crime Data Visualizations</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="data.html">Data</a></li>
-                <li><a href="visualizations.html">Visualizations</a></li>
+                <li><a href="{{ url_for('prop1') }}">Home</a></li>
+                <li><a href="{{ url_for('prop2') }}">Data</a></li>
+                <li><a href="{{ url_for('prop3') }}">Visualizations</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- HEATMAP -->
         <section>
-            <h2>Interactive Charts and Graphs</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur ab in hic ducimus, eveniet quidem sit totam voluptas. Maiores, voluptatibus! Non, iste. Asperiores autem numquam nemo hic cumque porro.</p>
-            <div id="visualization-container">
-            </div>
+            <h2>Tracking Violent Crime by Year: 30-Year City Heatmap</h2>
+            <p>This interactive heat map displays total violent crime levels over the last 30 years in major cities. Use the year filter to explore how violent crime rates have changed over time, with color variations showing the intensity of crime across the United States.</p>
+            
+            <a href="{{ url_for('prop4') }}" class="button-link">
+                <button>View Crime Heat Map</button>
+            </a>
         </section>
 
+
+
+        <!-- BLANK Section -->
         <section>
-            <h2>Heatmap Visualizations</h2>
-            <p>This heatmap represents crime per capita accross the Metro Areas in the USA</p>
-            <nav>
-                <ul>
-                    
-                        
-                </ul>
-            </nav>
+            <h2>Blank</h2>
+            <p>Blank</p>
+
+            <a href="{{ url_for('prop6') }}" class="button-link">
+                <button>View</button>
+            </a>
         </section>
+
+
+        <!-- CITY SAFETY MAP -->
+        <section>
+            <h2>City Safety Rankings: A 30-Year Crime Analysis</h2>
+            <p>This map displays 30-year average crime indexes for cities, highlighting safety levels and the top 5 safest and most dangerous cities. Click on markers for detailed crime stats, including homicides and assaults per 1,000 residents. This map offers families valuable insight into historically safer places to live.</p>
+            
+            <a href="{{ url_for('prop5') }}" class="button-link">
+                <button>View City Safety Map</button>
+            </a>
+        </section>
+        
+        
     </main>
 
     <footer>
         <p>&copy; 2024 Your Website</p>
     </footer>
+
+ 
 </body>
 </html>

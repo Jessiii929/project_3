@@ -6,39 +6,79 @@ from sqlalchemy import create_engine, func
 from sqlalchemy import and_
 import datetime as dt
 
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sqlalchemy import create_engine
+import folium
+from folium.plugins import HeatMap
+import requests
+from config import geoapify_key
+import ipywidgets as widgets
+from IPython.display import display
+from flask import Flask, render_template, jsonify
+import branca
+
+merged_df = pd.read_csv("Resources/merged_data.csv")
 
 app = Flask(__name__)
 
 @app.route("/")
 def prop1():
     
-    return render_template('homepage.html')
-
-
-@app.route("/map1") 
-def prop2(): 
     return render_template('index.html')
 
-@app.route("/map_year")
-def prop3():
-    return render_template('safest_cities.html')
 
-@app.route("/crime_heatmap")
-def prop4():
-    return render_template('crime_heatmap.html')
-
-@app.route("/data")
-def prop5():
+@app.route("/data") 
+def prop2(): 
     return render_template('data.html')
 
-@app.route("/crime_map_2014")
-def prop6():
-    return render_template('crime_map_2014.html')
-
-@app.route("/viz")
-def prop7():
+@app.route("/visualizations")
+def prop3():
     return render_template('visualizations.html')
 
+
+
+
+##FRANCISCO'S CODE
+@app.route('/heatmap')
+def prop4():
+    # Convert the DataFrame to JSON
+    data_json = merged_df.to_json(orient='records')
+    print(data_json)  # Log the data for debugging
+
+    # Get unique years for the dropdown
+    unique_years = merged_df['report_year'].unique()
+
+    return render_template('heatmap.html', data=data_json, years=unique_years)
+
+@app.route('/update_map/<int:year>')
+def update_map(year):
+    # Prepare data for the heatmap for the selected year
+    filtered_data = merged_df[merged_df['report_year'] == year]
+    heat_data = [[row['Latitude'], row['Longitude'], row['crimes_percapita']] 
+                  for index, row in filtered_data.iterrows()]
+
+    # Return the heat data as JSON
+    return jsonify({'heat_data': heat_data})
+
+@app.route('/view_map/<int:year>')
+def view_map(year):
+    # Serve the generated heatmap HTML file
+    map_file = f'crime_heatmap_{year}.html'
+    return render_template('view_map.html', map_file=map_file)
+##FRANCISCO'S CODE
+
+
+
+
+@app.route("/safest_cities")
+def prop5():
+    return render_template('safety.html')
+
+@app.route("/test")
+def prop6():
+    return render_template('heatmap_embedded.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
