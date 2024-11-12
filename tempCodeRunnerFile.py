@@ -1,1 +1,1 @@
-"/map_year"
+from config import geoapify_key
