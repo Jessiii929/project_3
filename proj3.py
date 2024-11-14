@@ -66,9 +66,6 @@ def view_map(year):
     return render_template('view_map.html', map_file=map_file)
 ##FRANCISCO'S CODE
 
-
-
-
 @app.route("/safest_cities")
 def prop5():
     return render_template('safety.html')
@@ -80,6 +77,10 @@ def prop6():
 @app.route("/analysis")
 def prop7():
     return render_template('analysis.html')
+
+@app.route("/Code")
+def prop8():
+    return render_template('code_snippets.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
