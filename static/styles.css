@@ -55,9 +55,7 @@ main {
     gap: 40px;
 }
 
-main {
-    padding: 50px;
- }
+
 
 section {
     margin-bottom: 30px;
@@ -95,7 +93,7 @@ footer {
     text-align: center;
     background-color: #1e2a33;
     color: white;
-    padding: 15px;
+    padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -136,4 +134,14 @@ section:hover {
     float: left;
     margin-right: 8px;
     opacity: 0.7;
+}
+
+/* Hover Effects for Buttons and Links */
+a, .cta-button {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover, .cta-button:hover {
+    transform: translateY(-3px); /* Slight lift effect */
+    color: #8fbdf8;
 }
