@@ -5,18 +5,15 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 from sqlalchemy import and_
 import datetime as dt
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sqlalchemy import create_engine
 import folium
 from folium.plugins import HeatMap
 import requests
 from config import geoapify_key
 import ipywidgets as widgets
 from IPython.display import display
-from flask import Flask, render_template, jsonify
 import branca
 
 merged_df = pd.read_csv("Resources/merged_data.csv")
@@ -76,9 +73,13 @@ def view_map(year):
 def prop5():
     return render_template('safety.html')
 
-@app.route("/test")
+@app.route("/city_specific_crime")
 def prop6():
-    return render_template('heatmap_embedded.html')
+    return render_template('city_specific_crime.html')
+
+@app.route("/analysis")
+def prop7():
+    return render_template('analysis.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

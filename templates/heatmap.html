@@ -9,16 +9,32 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/simpleheat/simpleheat.js"></script> <!-- Include SimpleHeat -->
     <script src="{{ url_for('static', filename='HeatLayer.js') }}"></script> <!-- Local Leaflet Heat plugin source https://github.com/Leaflet/Leaflet.heat-->
+
+    <style>
+        /* Fade-in animation CSS */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        /* Active class for elements in the viewport */
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Data Visualizations</h1>
+        <h1>Crime Data Visualizations</h1>
         <nav>
             <ul>
                 <li><a href="{{ url_for('prop1') }}">Home</a></li>
                 <li><a href="{{ url_for('prop2') }}">Data</a></li>
                 <li><a href="{{ url_for('prop3') }}">Visualizations</a></li>
+                <li><a href="{{ url_for('prop7') }}">Analysis</a>
             </ul>
         </nav>
     </header>
@@ -29,7 +45,7 @@
         </a>
         <!-- City Safety Map  -->
         <section class="fade-in">
-            <h2>City Crime Heatmap</h2>
+            <h2>40-Year Violent Crime Heatmap</h2>
             <p>Check out the crime heatmap by selecting the desired year.</p>
            
             <div style="text-align: center;">
@@ -110,13 +126,29 @@
                     }
                 });
         
-                
+            
+
+        // Function to handle fade-in animation on scroll
+        function handleScrollAnimation() {
+            const sections = document.querySelectorAll('.fade-in');
+            sections.forEach(section => {
+                const sectionPosition = section.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                if (sectionPosition < screenPosition) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+        
+        // Initial trigger to load animations on page load
+        handleScrollAnimation();
+   
             </script>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Website</p>
+        <p>&copy; Group 7</p>
     </footer>
 </body>
 </html>

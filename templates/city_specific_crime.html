@@ -19,51 +19,40 @@
             transform: translateY(0);
         }
     </style>
-    <!-- Preload other pages to make it faster when navigating -->
-    <link rel="preload" href="safest_cities.html" as="document">
-    <link rel="preload" href="crime_heatmap.html" as="document">
-    <link rel="preload" href="crime_index.html" as="document">
+   
 </head>
 <body>
     <header>
-        <h1>Data Visualizations</h1>
+        <h1>Crime Data Visualizations</h1>
         <nav>
             <ul>
                 <li><a href="{{ url_for('prop1') }}">Home</a></li>
                 <li><a href="{{ url_for('prop2') }}">Data</a></li>
                 <li><a href="{{ url_for('prop3') }}">Visualizations</a></li>
+                <li><a href="{{ url_for('prop7') }}">Analysis</a>
             </ul>
         </nav>
     </header>
 
     <main>
-
+        <a href="{{ url_for('prop3') }}" class="button-link">
+            <button>Back to Crime Visualizations</button>
+        </a>
         <!-- Second Section (City Safety Rankings Map) -->
         <section class="fade-in">
-            <h2>Interactive City Safety Map</h2>
-            <p>Explore the safety rankings of cities with this interactive map. Hover over the map to get detailed crime data for each city.</p>
+            <h2>City Crime Trend Line Graph</h2>
+            <p>Explore crime trends over time by selecting a city.</p>
             
            
-            <!-- Ensure map.html is in the correct path -->
             <iframe src="{{ url_for('static', filename='lineplot_with_dropdown.html') }}" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             
-            <p>Use the map to explore the safety data for cities across the country.</p>
+           
         </section>
 
-        <!-- Third Section -->
-        <section class="fade-in">
-            <h2>Crime Index by City</h2>
-            <p>This chart visualizes the crime index of various cities, showing how crime rates correlate with safety and living conditions. It helps to identify which cities have the highest and lowest crime rates, giving valuable insights for potential residents or visitors.</p>
-            
-            <!-- Button to Link to the Crime Index Chart -->
-            <a href="crime_index.html" class="button-link">
-                <button onclick="navigateTo('crime_index.html')">View Crime Index Chart</button>
-            </a>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Website</p>
+        <p>&copy; Group 7</p>
     </footer>
 
     <script>
